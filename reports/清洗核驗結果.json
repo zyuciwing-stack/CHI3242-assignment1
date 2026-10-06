@@ -1,0 +1,35 @@
+[
+  {
+    "check": "treatises_source_slices_and_character_maps",
+    "records": 246,
+    "passed": true
+  },
+  {
+    "check": "cizhi_complete_source_partition",
+    "records": 877,
+    "passed": true
+  },
+  {
+    "check": "cizhi_selected_content_reconstruction",
+    "passed": true,
+    "exact_whitespace_layout": true
+  },
+  {
+    "check": "yuefu_zhimi_character_count",
+    "nonwhitespace_characters": 2500,
+    "sha256": "4daea91ffe943f678f598c2684a804920a127c17f36938612b3eb28c42ce77ff",
+    "passed": true
+  },
+  {
+    "check": "ciyuan_character_count",
+    "nonwhitespace_characters": 4812,
+    "sha256": "5a06ae82d009bafbf08ceac19fcb507b189122a2ab5574e31f0a4f5e76e701d6",
+    "passed": true
+  },
+  {
+    "check": "cizhi_character_count",
+    "nonwhitespace_characters": 2534,
+    "sha256": "192f7fd66eaa1289a43bdd1126f13349e2861a1a30d82c6ef253b7e9075b9471",
+    "passed": true
+  }
+]
