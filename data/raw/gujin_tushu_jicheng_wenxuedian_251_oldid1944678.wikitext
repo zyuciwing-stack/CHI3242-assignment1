@@ -1,0 +1,21 @@
+{{GJTSJC header
+|彙編=理學
+|典=文學
+|卷=二百五十一
+|juan=251
+
+|彙編_prev=理學
+|典_prev=文學
+|卷_prev=二百五十
+|juan_prev=250
+
+|彙編_next=理學
+|典_next=文學
+|卷_next=二百五十二
+|juan_next=252
+}}
+__NOEDITSECTION__
+<pages index="Gujin Tushu Jicheng, Volume 642 (1700-1725).djvu" from="20" to="31" />
+
+{{PD-old}}
+{{Machine punctuation|[https://seg.shenshen.wiki/ 古詩文斷句 v2.1]}}

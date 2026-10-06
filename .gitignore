@@ -218,3 +218,29 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ============================================================
+# 本專案（CHI3242-assignment1）
+# 必須提交的內容：data/、output/（含 results.html）、
+# 程式碼（*.py）、CSV、HTML、README.md、report.md、report.pdf
+# 以下規則僅排除不該提交的檔案，不得妨礙上述內容。
+# ============================================================
+
+# 虛擬環境與環境變數
+.venv/
+.env
+.env.*
+!.env.example
+
+# Python 快取與工具暫存
+__pycache__/
+*.py[cod]
+*.pyo
+.ipynb_checkpoints/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# OS / 編輯器暫存
+Thumbs.db
+.DS_Store
