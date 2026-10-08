@@ -1,0 +1,11 @@
+record_id	unit_id	segment_in_unit	token_index_in_segment	token	simp_start_in_unit	simp_end_in_unit	is_target_token
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	0	盟	0	1	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	1	檄	1	2	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	2	发于	2	4	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	3	师旅	4	6	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	4	相如哈	7	10	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	5	蜀	10	11	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	6	父老	11	13	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	7	可谓	14	16	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	8	德音	16	18	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part08	0	9	矣	18	19	False

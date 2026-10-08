@@ -1,0 +1,2937 @@
+{
+  "status": "complete",
+  "analysis_executed": true,
+  "completed_utc": "2026-10-07T14:11:05.703677+00:00",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "python_executable": "C:\\CHI3242文本發掘\\第一次作業\\.venv\\Scripts\\python.exe",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "find_collocates_signature": "(sentences: collections.abc.Iterable[list[str]], target_words: str | list[str], *, method: str = 'window', horizon: int | tuple | None = None, pooled: bool = False, measures: str | list[str] | None = None, filters: qhchina.analytics.collocations.FilterOptions | None = None, correction: str | None = None, alternative: str = 'greater', sort_by: str = 'obs_local', ascending: bool = False, return_type: str = 'dataframe', max_sentence_length: int | None = 256, batch_words: int = 100000) -> list[dict] | pandas.DataFrame",
+  "runner_sha256": "133f243c4c89e559f0d5cd05b7f66abc63570d387a78cae9124bac8a2675472c",
+  "input_verification": {
+    "status": "input_verification_passed",
+    "records": 111,
+    "units": 128,
+    "locked_files": 114,
+    "quote_annotations": 136,
+    "excluded_quote_annotations": 55,
+    "stopwords": 40,
+    "input_lock_sha256": "37b01c8d4bb3076723ca3376ef111354596accb40b068da801345e43f9fad9aa",
+    "locked_files_digest": "bebc135e1c27e6776c324d2d56768c4997da96313b90b461c408be03dcd1350c",
+    "analysis_executed": false
+  },
+  "versions": {
+    "qhchina": "0.2.7",
+    "jieba": "0.42.1",
+    "opencc-python-reimplemented": "0.1.7",
+    "scipy": "1.18.1",
+    "pandas": "3.0.6"
+  },
+  "scope_statement": "以〈典論·論文〉為立題入口、以《詩品》為上限參照；兩篇年代待核材料按使用者決定保留，非全部嚴格證定在《詩品》成書以前。",
+  "scope_caveats": [
+    "〈南齊書·文學傳論及贊〉相對《詩品》的成篇年代仍待核。",
+    "〈內典碑銘集林序〉相對《詩品》的成篇年代仍待核。",
+    "〈隱秀〉電子編注與爭議補文層次仍待核；本輪沿用現有文字，不能把全章無條件稱為劉勰原文。"
+  ],
+  "rules": {
+    "splitters": "。！？；…及換行",
+    "opencc": "t2s",
+    "jieba_mode": "default",
+    "jieba_HMM": true,
+    "target": "气",
+    "directed_qi_segmentation": true,
+    "quoted_verse": "沿用v2.1固定引詩區間；排除區間成為硬邊界，兩端不拼接。",
+    "short_sentence_filter": false,
+    "stopwords_result_filter_only": true,
+    "repeated_comment_quotes": "保留承載作品中的文論重引並分別計數；不宣稱統計獨立。",
+    "comparison": "合併本次所選語料，三組分析，不沿用兩期六組。"
+  },
+  "selection_records": 111,
+  "selection_units": 128,
+  "all_qi_chars": 106,
+  "retained_target_tokens": 106,
+  "excluded_quote_qi_chars": 0,
+  "zero_target_units_included": 87,
+  "nonempty_background_segments": 3966,
+  "background_tokens": 35138,
+  "max_segment_tokens": 77,
+  "max_sentence_length": 256,
+  "stopwords": {
+    "count": 40,
+    "source": "qhchina.load_stopwords('zh_cl_sim') + OpenCC t2s; matched frozen input",
+    "fallback_error": null
+  },
+  "reuse": [
+    {
+      "unit_id": "weijin__caopi_lunwen__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__caopi_lunwen__part01.txt": "cfb56f5b0cc9c62fb1a545ba95157eabe3fff42c87ca26379d56050570756587",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__caopi_lunwen__part01.tsv": "b567ba7bfaee9fa165b0ce0eb3b38bffd40cab313f9525516736bbc1b15317f1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__caopi_lunwen__part01.tsv": "c30b03c8280d593471e24fe77b5452a13f20d9271a09412a2685aaf7da4493a9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__caopi_wuzhi__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__caopi_wuzhi__part01.txt": "2d5cc64aeb8938e76be169efdf12a020b9b5caabb13babecbfebfb65fb6accf8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__caopi_wuzhi__part01.tsv": "d29277c36e8813dfd0fb937805caec352db79154e947d577c12ad038197c0c1b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__caopi_wuzhi__part01.tsv": "f0ca5af641b99f7ba3519ed49f5b5f58c72f3f6ef8ac42b61bab45707e158af2"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luji_wenfu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luji_wenfu__part01.txt": "eee212d2e8e87b57be0f525fe2c30e4acf68f9a1d9d6fa73a6db16bc4e223140",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luji_wenfu__part01.tsv": "d04d4998f34a6285ff1f2e0b9b4997170ebc4302ed5098dd13eef40954727ad1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luji_wenfu__part01.tsv": "6c0c5940b939552cac66458e54b9d02f6ec87257ee84139fa683080938dad79f"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__caozhi_yang__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__caozhi_yang__part01.txt": "c492360df2c009263f46e2e05ee79a7649ae4975b2f04c6f69eccdb51271e58e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__caozhi_yang__part01.tsv": "20863aa4b4a85debd8378dcea7766bd5cc4ef11907d90d14457bf5ddd468e74e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__caozhi_yang__part01.tsv": "6859531aa8ab7a115644d28ec29f52dc045d4e49981cd582ed4ce614ba824aba"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__yangxiu_lin__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__yangxiu_lin__part01.txt": "2fa2af1b114e162f32420d942480afb8cbeee466f2db2f03835e713b49408752",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__yangxiu_lin__part01.tsv": "dacf14317e3fa29444a253625b2730ca1d7dbad379407404efcf39a1ac0125e6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__yangxiu_lin__part01.tsv": "fed5cfd7ffaeb078b484fd2772c882111b45e99703de977589ad7d4f062d55bf"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__chenlin_donge__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__chenlin_donge__part01.txt": "5b999e5bedd47692406a50f4e7c3f6d10e5782e72f1e70f057facc96aeda050b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__chenlin_donge__part01.tsv": "bee4990a49e4c143fed534f35b45aee12ec07920e98f11bfcbd00bd199f0a6cd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__chenlin_donge__part01.tsv": "d36721d7295a3e3f45b6447695ee2e08c9cefefd1f621882797a8fc00c4aa8bb"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zuosi_sandu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zuosi_sandu__part01.txt": "ac12eccd4af326a32ffb05acb16d0ab9e3c6f92024a412b5385d28d78fb42ef1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zuosi_sandu__part01.tsv": "283be99e02ed14726275f49eae01592311dcc51e41d18fd5c3fad88860835dcb",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zuosi_sandu__part01.tsv": "543d58afbe9d510efecdc0bc84403befb3291f467018d70de1d47ddf21d2f69e"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__huangfu_sandu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__huangfu_sandu__part01.txt": "640d0cd0c33c7487f491f3a9a9e238cde7fcd0b0f7089b15d8831b7462948b88",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__huangfu_sandu__part01.tsv": "444c856bd93908ac4271d9cc891afa630e3af645d2ccbd2161acfa59ae0b8055",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__huangfu_sandu__part01.tsv": "719769258bf8d6cc0ee3229dc6bf2dad90bfa378d60902e4217afc0bd81055c9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__gehong_鈞世__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__gehong_鈞世__part01.txt": "c7a2f782a28457af7bcb6ebb0e0c3bca897cbf5b12621f03f1e93c478697c6ef",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__gehong_鈞世__part01.tsv": "20dc99fd37ac238d3ac8ccb91564d6af26607bcd9acf0829023bbf21073950d4",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__gehong_鈞世__part01.tsv": "421ec74e2042a9871663ea3d0c7303e9f57218a19688db06f12db10934a7e72d"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__gehong_辭義__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__gehong_辭義__part01.txt": "a518f24875823c4edf5ba12b25251a5b16edabe9e9e4a756039cda6362ce62ca",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__gehong_辭義__part01.tsv": "ab7ea97de4b79788d0daba46447b1f5c60ea6fc948afb98fcf7a4e6083713b42",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__gehong_辭義__part01.tsv": "bb7b31936364de9e3bf2398af9db55d6da2d5fd2ff55365160b7ce754770863a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__gehong_文行__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__gehong_文行__part01.txt": "11b4ff6fa47947ad2b60aaee18bbc9b1cedcb2acd42866624d34923305e01d5a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__gehong_文行__part01.tsv": "8ddcb2558826290eb36094f4dafcc570316569f785a41beb838bd3dc90b510ed",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__gehong_文行__part01.tsv": "bb27c91bfcc01d54a2128bc8b4f0719685cdd43bf045864f2799a0bc81c13779"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part01.txt": "ac4103b299099943a075f96ba665168523b3d239dd4c817588bd5e6f37c131d0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part01.tsv": "257776868e906ad9fd83cf0e3e77d7d735e2f69beaeaae86b73a182cbbf79135",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part01.tsv": "b9c7a232af0836309c20d1ed819bc7a8e3a9c82f1dfbfc951e14e06539969616"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part02",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part02.txt": "32914af537dc74ebf15ee8e65579760fdb8663b2fb9a0b03d0d17afe1c5bc0fb",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part02.tsv": "3216a10d6f1de662efb85064609aa1b403601ecd54a29a3a0a34c553641c4576",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part02.tsv": "7fbde75942797c0f3832b5b6bb8badde14d05c85e7642bab4e2afdb59911a31e"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part03",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part03.txt": "f3096497e7eaacb627c614ddb14135f54c389ebbd314bf87d334febfca2e2d04",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part03.tsv": "4e4b2cc9fc33f12e0f00ce7fe96606102230d3761a500c97f425afc264f7a34d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part03.tsv": "295a4d720d8f40f1effdd9061dfc994067c8e20d3b7082cff3e6bb48f16598b9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part04",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part04.txt": "46d952a0373712263f41f42c984db9aec434e74d78d4e1cf583d3f3243c3a687",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part04.tsv": "bb250d4a58eae5d58e1d647aca7d29f4748a99a3ee9ad0563f92561d2a986aa8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part04.tsv": "4477d4f8a71283c0a4f95d656c250bb7e1f2016d092cbbff077866a301e35f3f"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part05",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part05.txt": "aa909874a6ff137388a9586cf359f0fbb02399b98fb3229f40f3726f6f44cd65",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part05.tsv": "a47a3618d8a19932dc5589e13209fd7cbc2e96e51a4147f9eccb124d984049bf",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part05.tsv": "e5bb7f6ab6128c101887b7c29c456f7e8285e12fbf68da0bda0dc6f24b4fff83"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part06",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part06.txt": "e72dfc6339aec4fe6bf4b9366c212853d1a246eefcbea5ff5993c43744abba24",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part06.tsv": "9038a28a7b22ce81ad87b221ec9e3b762d7321c0537d714104165d7040e98794",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part06.tsv": "06a9cc02fd2ec9e0340d20ab4a21135d72a1db426e690f2753a951270bb1eced"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part07",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part07.txt": "d624332e452a4d912ed714fa886920d61762ded57c44718562f5dec596537fee",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part07.tsv": "e1b19796d8699e6f7a00f86bf11dc1085376f6a32bce5280107261da7b24576c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part07.tsv": "4cf9e48e2c208d1f899b60cc80c388c8775eb5f64e0e8aebb1003de61e215671"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part08",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part08.txt": "feec29ba8622cae3099bd67027d19d370e034ca8153c235b222bb500de579b64",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part08.tsv": "96c3b0041cef8d32b0d17b92d0b6c5a454f32033ecd92d3197bde40b05ffe3c1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part08.tsv": "7496b1c41ee5725e670f4e7b9a0e89b81aa7c57f48f23cbc9a944b87e23730d1"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part09",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part09.txt": "4fb9cde47fbfad7aaff8df3abd420c74c3920c463c9598d6d291207e355841c0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part09.tsv": "db6ecf8977a457beab10ac5e353179e21cf1f380f3cea7ae1f284112112b2c44",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part09.tsv": "6eb5b3812856bea0660f2da764ce5dacd9dfa57819bf6e9943a9baf721093aa9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part10",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part10.txt": "b1a9382139f4105ea5196cdd2d074299a7a88795cc95d15b898569a41fe94c33",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part10.tsv": "7f0080fecfd9ce71be6418f719913366c01d8e3de3db9ae0acf06e23989f9898",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part10.tsv": "e19596b0eb8afec407bb1427e5bb2c75057c564b457fa07a008d0653c86382e0"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__zhiyu_liubie__part11",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__zhiyu_liubie__part11.txt": "fcb21d36fbd7745d4273d8a5b591ba75c1fbe6b330a96aec19e3d280e39b93a2",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__zhiyu_liubie__part11.tsv": "a78c90ca407f0f5349fc7eaee1835e94be40135c30a385c49ceeb5a836ced44a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__zhiyu_liubie__part11.tsv": "e68a7ef2790bb699399f7e66dd5b7e321a7fb3b947dec08a876d38635597528e"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part01.txt": "5e79668f892db54f3f69edd7ac133e9e20885e441145fbed70a4368d6e656d4d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part01.tsv": "a3359e1c4508d5ade8266f65124fd5e52505e1f042c31b9568d640bc4715f15b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part01.tsv": "03fa916e021642e5c152101ab84bea14699b2b9cd980fc68c199e38625612c73"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part02",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part02.txt": "748cbea57af34b8937a9c740f41f125d8456a127ebc7ad169e60ebb78a413da1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part02.tsv": "3c792d5d7404859d047caf832c053d45d8268d9506147fdafdb8dcc3d4e076c9",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part02.tsv": "7cb107915a174d0b905701ce52d06f7c6b69ab36f0bc41c7063bea36f40b43a1"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part03",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part03.txt": "0f37d2589fc15195eed93391a2f76176bd63fa32665395f6a0d52401a97b6719",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part03.tsv": "f8ea0886eaa4f446e5bf5b7e12c12064c0ee96e99b22c29f0cf8dc9c5ddc540d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part03.tsv": "e19596b0eb8afec407bb1427e5bb2c75057c564b457fa07a008d0653c86382e0"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part04",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part04.txt": "e176823e6d34c8f9509699581cecdbea944d1938d4309d2b244ad7516cfade41",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part04.tsv": "7c7c20a0564004572b6d56819b72f0acf294eb1617caf51f0e690c699dd4e338",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part04.tsv": "39bb851b0d20417662e7150f7941b19085d24193173b0465b9601414ca2548ca"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part05",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part05.txt": "b7a0fa211e0eb009d91caf85db89371f586ceaff28833fff2a063eb39b6ece4a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part05.tsv": "513e9117fc5953e1b6f9e15e7b560d2da5c8074c93d231f91ed070940628a708",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part05.tsv": "73757a21725d5ade7d84017476f643f685d12131cd3c1bf184bb39f6c4e01fbf"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part06",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part06.txt": "7597177116d3ecdfb432ea9992ec73da689a3d98b39c2e4b939b9f2eef370cd5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part06.tsv": "fd12133a9077a75609e9add5e69671f6287dcb5c200cbf5025f6288eafb49d82",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part06.tsv": "0c030cb5f228d03b408fb7441fe0208bc568ab9750058bf5465ed1cce12a6002"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part07",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part07.txt": "c050c01860d875ec8d50e6e4b6d60f75f320a8867878bcc08b0d5c419bd62d6c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part07.tsv": "ee6f76e4d7fc1895c077d160cb5316de547dfbbb37d5c93263a37e342daba803",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part07.tsv": "d97790dbc3e23fd9cafdb37bedb5adf878a6d6a5814ea3d95cbb4f8252118f80"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__lichong_hanlin__part08",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__lichong_hanlin__part08.txt": "38011304304eb283db46f376d023917a486a97e0d9b824a1a233ab90d764e4be",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__lichong_hanlin__part08.tsv": "7e34529b7a4800690a43c21275301562dcac28ac055a485cc6a83db1cc36cd33",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__lichong_hanlin__part08.tsv": "52312e3cd0add60272853926b4c507da2b832943f1c35aea7e37866e33f2b852"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__caozhi_qianlu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__caozhi_qianlu__part01.txt": "ec03d4275ec072f7e83ced5fe7d934e8805de2010e2dea3133b71d09fc85a5fc",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__caozhi_qianlu__part01.tsv": "22a712be337912c0ff65dee1398b06058d7d653604efd69283da9f8fd6694563",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__caozhi_qianlu__part01.tsv": "de4cab674e4d0ca7cd100085990e80b63f80310f16e88147a1690577de8f4eb4"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__caozhi_qiqi__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__caozhi_qiqi__part01.txt": "ba6571e97d99ffd7af822e71dfe3a9f63705b8625ce3ad8796fd5b0993d8499f",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__caozhi_qiqi__part01.tsv": "d72ba09d59bebaa52f44b010eba406296588fdba8fdda980ece84f767a8df96d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__caozhi_qiqi__part01.tsv": "36798283d7a51d8b8bcadce3749f3544ca4fb6d97ce031dda1d8277b1690d996"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__fuxuan_qimo__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__fuxuan_qimo__part01.txt": "c77fef150cdec24bd842ce752632f6c09e12141dbb26160a1cdddbfa7e50a3ed",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__fuxuan_qimo__part01.tsv": "9a22a240beeb15b9039e0999b9c758c977f916237a086b95377746c009e1c13d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__fuxuan_qimo__part01.tsv": "679fa35e20f4d153e3ec3c44c8841d1dcf8e1ae0361a293978133b9efda47f18"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__fuxuan_lianzhu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__fuxuan_lianzhu__part01.txt": "a49267a305a21c9996ba39f6e6ee90c645b6dc30c8b21f1e6332791512ce1c66",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__fuxuan_lianzhu__part01.tsv": "5af18d29a8363f451b451f2f6901f298d64b97d16fa65ce8c404fd7add9b9993",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__fuxuan_lianzhu__part01.tsv": "05309d5f1333f1b77897b8d94bd9053c899981268b037d10dfde792f03ffb795"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__fuxuan_sichou__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__fuxuan_sichou__part01.txt": "ce21cfaac798313d7ff79be10cc0bd1584fafb157898e904fc0e2b31f3437cbc",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__fuxuan_sichou__part01.tsv": "fbaec083823e2a4df1ed7ff68a8a48a5d348bee0906cbba099ac509635417554",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__fuxuan_sichou__part01.tsv": "12ebfd64d8c30c07b506538f9011ec2ccbf72a90150056c4a37197a11d61a69a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_03__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_03__part01.txt": "5d40ea3c0948709a953cdb3316107a25abe9acea0d4da177ea30a99a99dc5892",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_03__part01.tsv": "fda61953d9e01538d47af211a91233472997a28d100659b8f135c1445db6c60a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_03__part01.tsv": "cb5234b56f67327611d57aa4dd9d3575deb9ed15b078de3a220991d37f600e37"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_04__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_04__part01.txt": "faacc672b3e110b84dda8fadc036f992619661eaa707a823197a84a9c001d43c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_04__part01.tsv": "ff3b56eee002b21023f5139c951fab8d50f49f1df176fc6eefffcc8d3610e049",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_04__part01.tsv": "33e241a4cc471cb357b562ea34a0a02841accaa5fd189d517566cb921b293974"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_05__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_05__part01.txt": "4a4323b8f3a7be30424adf6a685aa10b5f1f338b866453c84e68539512486b3c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_05__part01.tsv": "2179b8264d5a589201655e04fa3b77e4364bb8eb750e2d97190b2dc486c23d56",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_05__part01.tsv": "e07645bd1aca713364e0477c527a15c429ab64714d53fba750ebd29a3b5154fa"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_06__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_06__part01.txt": "72d1cae8836b794b9ab4d22939d55cd5151954071ffb8ff6ff8eb4122fef9b38",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_06__part01.tsv": "1708e6e8e3d1338f0979eaef43db1833cd62c9b76bd32f2eecaa5bbefcfd77b8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_06__part01.tsv": "dcdda6b26d66ca57cc5e0fc59cec2dbfd8ab24de0eb471bf4e80086b13230cbb"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_07__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_07__part01.txt": "292215e2f2c477a0529ff308110d565d07765f48f406ff732163f437d2d8cd1c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_07__part01.tsv": "6bf48a919143d9dde7713376d8b287f944f28c55044c526dbe540417a6cf8c17",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_07__part01.tsv": "46b9e77c18a3215359dbb0521b085cc5eac34d4dd188bec5840a575e72514aa2"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_09__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_09__part01.txt": "917567cbf611403ad9d8fde4b53ba0dcadaf38d97cc0d720c8fdb90d226345e5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_09__part01.tsv": "e7d8d213c6fab46fd7fcd1a259bf2f1b300205d708cee111fdd13a0e0edb048e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_09__part01.tsv": "66d1b36be5cb893bd1a964216f0ac8abce1f55339b3f829faf75663e703c2d23"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_10__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_10__part01.txt": "3d09813ee0b9d16a7e71c0ee69b5c400c753b4339f7304480752664c71bf13a5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_10__part01.tsv": "2e72c41cfb8f26d9eb10650afc6e5131b75b7f81b02ad06c7f1a41f23ed4fcb4",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_10__part01.tsv": "578aec4cd8951a39779b7062d9fd1c28e9abb8dbf709b5be08c2edd0dd018c13"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_11__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_11__part01.txt": "017dfdb21c3a9f6f07d4b76b9837da931c73f8e352522942f40275115c41ce4d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_11__part01.tsv": "11b88ec3649ec70017e637e656604a2bc752ad0734a770c28325d07d541a5dc3",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_11__part01.tsv": "12c39edfc139f4e54e80a0afe8e025c1374e1a457d1c28cdfe324efba9055e26"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_12__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_12__part01.txt": "c33629fd6304e6c81a4ca7b8479dd6b0e78ef6e6b73b32f7b4759944f92ad377",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_12__part01.tsv": "fc154686b587d8dff6894b330b74f44cd76d7dc5a3b06c046b818dd9fa3d9615",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_12__part01.tsv": "e0e6b508108676041175f32ce469d94a289e377a62f28ab5198f7dcc5f4639c3"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_13__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_13__part01.txt": "4b747dcc47865737beb666d90e20e05b5d2d89f4199f7fd3577dbc85db763ab9",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_13__part01.tsv": "249d4f6ca4b3edbdebce7cb60be423b5964add8b7bf2da7e8c6db541045014af",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_13__part01.tsv": "b1f5a3fc2c06f2bc6f991dfe9b0adad8822a6daddd853b408f15a3e4074ad3c3"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_14__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_14__part01.txt": "3f656c9a334239877af9043edb66eb962b651b7e58d20141cd8878d60bbba15b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_14__part01.tsv": "fc7db0837afaa2f927ebef2396b8ce085ee8a24d42ea123e005688ed2704901d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_14__part01.tsv": "849d7739f4a22d40514c4ac757f6f497f874faa1263c46d671f3bf3357075510"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_15__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_15__part01.txt": "9a151818adc92168be51c3c9be3416775e2cd7bbebf6f18f0c4b836ba75572cc",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_15__part01.tsv": "ec58c067fc6bb571596973defd5ab5bcc8cc8ddd0eb644c37a653db730571dec",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_15__part01.tsv": "8197233f00c62c81d4f1aaf245e3146084b9b9667ebb596ea2fcb6b4eaecd774"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_16__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_16__part01.txt": "e539baa5fb9995f256398fb9119de66b3ec465f5a503f61a3bd82f091d7072ca",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_16__part01.tsv": "34441d0fe0ea79638adba09468bc4d9eae171747e809a9be9ccb2c32baa9092d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_16__part01.tsv": "7e22f35e132b8e335ed6a06f629454ac4018fc214e767886cdc42a4b67fddb19"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_17__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_17__part01.txt": "f3a97002e7aac664134fa0f4137cfa6053a61f59c92423c27f01fa372c635a08",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_17__part01.tsv": "d0a8f4af78fc84c78033666ae32562481251d043ac99a31486f3e37f695b2750",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_17__part01.tsv": "c210352325204380e7fbd02d96e5481bca2050ff301284f79e95b4533a1da69c"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_18__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_18__part01.txt": "12ab033c7404e0ad80242cc464884de6ca8a3be7c6d18e5dc995ef8d1da6bb85",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_18__part01.tsv": "405747840727da2a5ef491da786f2787b271f27fd12f51c261883cc35bc072f0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_18__part01.tsv": "57920220f307bc4e5127efaf6add062cff2b2eb84cf25f748bd5bff7f6854923"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_19__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_19__part01.txt": "d478371eec02dd3667cca355b47828e20b08414c9ee3ebc7498749d27b35c65c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_19__part01.tsv": "8338e6602877d2b65383134f5bb7ce5a1a27d994f2dac97a6f3904d185c8caab",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_19__part01.tsv": "3ff4c170b5a22074953d8ab394ddf771b4f7f9649a8f422d281584cb60e627cd"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_20__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_20__part01.txt": "9a7c752c7a37f24a42d8e3362d329945a39e23d60199389ec8fcd875a6b16c25",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_20__part01.tsv": "b3a185e001cb82b87e2f8e6909fc30c13ea633da7b3629234423ee148f453053",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_20__part01.tsv": "37d42fa13376ce91fd9aa382f02532ca1151bf09b1b0ca2341e3f1554f0fbad2"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_21__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_21__part01.txt": "ee7b6b0a49522bca991ecea9e2898dd101aaf601970664567eafc6faa9915556",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_21__part01.tsv": "d5b18cf2d0075de1ec8185678caf07073588b7fba57308f344bc3703d2e38833",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_21__part01.tsv": "0f5dea1de8464c994f3c07d45287f5575bbcc2f995fffc46f3a3e615ec201a67"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_22__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_22__part01.txt": "b66f7f855a5920d15f636b64f6755a91c21518f08f9f34ccc01bb5c897ca7971",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_22__part01.tsv": "89f62ae2438da82e8949df4b45cc2fe68eeaefb16597c9b098b1e4cb387a96b8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_22__part01.tsv": "8a9437749d3e17eff23961533082deda9a58ba8cfb497f74ceaf3eb4038cc8c5"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_25__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_25__part01.txt": "d386789d28518cd4048022d7e723030b5a6e28d4d2b60e82846f6d7c201a7bd5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_25__part01.tsv": "0525f01374cf23fd0cbc1cabda20e02cd2ad66acf975c81e56cb17e61a54308a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_25__part01.tsv": "e028135020b7b51f7d5137d8f5a0c792d8f2e8dcfe48945b5efd0a4e91c14017"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_26__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_26__part01.txt": "716a8bf5c06509229c342bc1a59df799a660c52b493bc095d95452c257a91e59",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_26__part01.tsv": "e068ea329be3df02627618897c8a9d76ea21811ebb0437b25139a7ee73e49d3a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_26__part01.tsv": "c1a2591d6a15c9bc785fda4f142fc42450d3decdbe3f0a20e93f7a8e083941f5"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_27__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_27__part01.txt": "618b0530e0cd91e474c0a443c94bf51bfcdc135985af14ab1a442d59fb278cfe",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_27__part01.tsv": "36db3207b6c6360845ba9e94f1333946c97eca2c53beed3c0c4c515c4831e2a6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_27__part01.tsv": "b404925a91e569f6d2c1048334f2eb24f19af73b14907452d2b6610d0fb61e48"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_29__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_29__part01.txt": "a2de4ba10cd9b4c1eb83d2f6a87c964483d2d342c13c2a454026c930a3f40799",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_29__part01.tsv": "dca8ee732fb477f9c80b93b4ecd0e10d4983d9becb23e7e3bdaa2245374ed973",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_29__part01.tsv": "845982e4d5f3640926f13aa0ba0d20f57a79a88370213ca13e2d0f60ef9de624"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_31__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_31__part01.txt": "28dee3011d18588ced9b5626f8134defa739fa318c977b7f05a6f270fec65a16",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_31__part01.tsv": "9f4d258b2020ef6336b16ae45f7efff3bd360caeaa48d895e56f28d44b47edb4",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_31__part01.tsv": "eacac40fd3992eea4b55fcf959cc5643eadbc85cc2c69f47f060216e4fdaf4f8"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_32__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_32__part01.txt": "d61d1bf452ba1ccfc0ee7a28f928b59a52d0b6b37e4607999e8c0455fb264ee5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_32__part01.tsv": "73d50935f6b5f72b73314cceebcfc71db1f6b97cb464f99203aed0508fa82981",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_32__part01.tsv": "58adf3e3c4eb45340086d6f53f6f60055cd1c944af2049cab2fbeaa9d62ea519"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_34__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_34__part01.txt": "8f23e483f94536b061368e6d60b3f7b20c659607cd83d965cd64076ed1a46534",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_34__part01.tsv": "7a5ac9b121713bf32a31f4089ef7136c53649fd0131cf5652b2f444be18067e6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_34__part01.tsv": "5c0cde18c3764eebea5872f8e634ae68c8a2f0aabf91b632830c609a06cb6a90"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "weijin__luyun_pingyuan_35__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\weijin__luyun_pingyuan_35__part01.txt": "a7652f407dba176b7beebfbc60e571d24251bd56d97f78f417fef37a2894b6a7",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\weijin__luyun_pingyuan_35__part01.tsv": "a5140a9bcbff274abf4457b3706cc31a9cc93891f35d3ee03225e02a5f18df39",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\weijin__luyun_pingyuan_35__part01.tsv": "73a126f8c750f82b4d2c77a420143ef96c80bf26a63e54c1fa6bbf6205cbc786"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__shenyue_daluejue__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__shenyue_daluejue__part01.txt": "b9f690966e525e9a0cddf5691563f7e48b8e2e66d129e3f0b8aeb5fa0359e6fd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__shenyue_daluejue__part01.tsv": "c79f089146edf2aff92f9fb3069eb926b1914a9b659852e7e5f61247ce1029d4",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__shenyue_daluejue__part01.tsv": "9bdf14b6cde920ac242fa26df4ead07f71c34da9e3c0eeed8ee79036eb8bbe36"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__shenyue_baowangjun__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__shenyue_baowangjun__part01.txt": "eaa4f4c6f05f1c36f430e386a92e6a34d885c41e243ec176484c4a19a69fec8d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__shenyue_baowangjun__part01.tsv": "d112624b7cd45d9a0092e0b2ce078a135bd854cbfb4528c9b3df96b382119f76",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__shenyue_baowangjun__part01.tsv": "b7f66f048b2acfe324fc8b834cbdb7652badbff30ebf95a677336ada0e20bbbf"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__shenyue_baoliuyao__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__shenyue_baoliuyao__part01.txt": "5b5e11af3b495b2f6daca01eb9393d53586cd3eef8ee52708697cb694ad6022e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__shenyue_baoliuyao__part01.tsv": "8a498e92106d8da065946362d8375ed54bdfb1b5b6334d81422d64c6a5db32f4",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__shenyue_baoliuyao__part01.tsv": "1836509ef8f75ab29226dee4d61fc69809fa308355fc6213a5f4314322fcd3a4"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__shenyue_yufanshuzeng__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__shenyue_yufanshuzeng__part01.txt": "2581bb069b54e748bc78ee23cda67ea9d74aa4d8b7e47bf27fd12c2fd9c499ba",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__shenyue_yufanshuzeng__part01.tsv": "50ceb5a74f8cc09390bec8d1fea45f0d49b9bd209c106b102af6ebb7c1865c0a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__shenyue_yufanshuzeng__part01.tsv": "ce0b2e3471354336b585e3a6a84cd20211f2374b8fc1a724e17ff1a5839fe1b7"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__shenyue_daleai__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__shenyue_daleai__part01.txt": "b4c18ca19646efcee564863309bb5e3d2c91a2040ee00da2251e0c77d3995bbd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__shenyue_daleai__part01.tsv": "a07bad5e4f5e18d77be525d890596cdb168cf580936f0d33fc35c7e6dcaf6c31",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__shenyue_daleai__part01.tsv": "3556c7d3e9d53866eef5fa59a712371f241db01487a552ce451b7b7e1ed0a339"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__lujue_yushenyue__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__lujue_yushenyue__part01.txt": "a70805710488564d911ac2d5daf8c025567cc8d4e4d0d332b33840a0412fa412",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__lujue_yushenyue__part01.tsv": "9065054acf299a43f1732f487530c2fdc8c673237624baf5c20f6736cd2520ef",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__lujue_yushenyue__part01.tsv": "79789a12db9655491893626cea81492ddd8e84a9bcd4e7c458828519d50d5e1d"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__shenyue_xielingyunlun__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__shenyue_xielingyunlun__part01.txt": "28f0b8a51c315e2dea30a1e4b7aef627a8e110a170e7110a1189c153e06ef16e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__shenyue_xielingyunlun__part01.tsv": "049e964f53bbca832d3ac84e5b18bf9d00f6f6bba67e200467069127c690a7c8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__shenyue_xielingyunlun__part01.tsv": "103f03af13836ce0abfbeb502c3ce6cde01694ebabfd794d71f2f2e9462f7f71"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__xiaozixian_wenxue__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__xiaozixian_wenxue__part01.txt": "7b494a23c7e1c0c3bbe7cdb350c8bb837970ec9cb40a90418992692edfad2bfd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__xiaozixian_wenxue__part01.tsv": "5988878666a35596903e4e82c6bc039577d6bac15675f9b1010852ddbd9a526d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__xiaozixian_wenxue__part01.tsv": "3a429bfd7cf4421ef5e2b273800a60e919784d5c11630b2b593a288e87ef1ec2"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__xiaoyi_neidianxu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__xiaoyi_neidianxu__part01.txt": "97455b90b5d760060239c090f8cb3b65aa5f3a092de21e4f3e9327037051bbb0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__xiaoyi_neidianxu__part01.tsv": "b1b8c0c428e80ad11d4711510d3d8d43bce5a0c0d21c0963a60793ab17d66418",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__xiaoyi_neidianxu__part01.tsv": "616a6af3dd44d0402b831d1d3322021f56b17cb168a805487094988740f61e5c"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__peiziye_diaochong__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__peiziye_diaochong__part01.txt": "5f07f5d8dba2e45584d89cac25959a80661ecea5f3955ae40a25320461ede4e1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__peiziye_diaochong__part01.tsv": "89dff571029c1846815de423ae31aa91de3d158f9e8c2f3d890912751bba80e6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__peiziye_diaochong__part01.tsv": "7e21966170de8b806f548298e450d18bba91c25a7c4d2cc4323ef2f9579dda32"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__jiangyan_zati__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__jiangyan_zati__part01.txt": "da7e060842ff6c038e34cdb0ff5bf5104a3a069f7949baef7417f3dcc34ab320",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__jiangyan_zati__part01.tsv": "18ba564f1faa9aa02415a44038be857ffb8260dc97b2a48d8a676986574a028e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__jiangyan_zati__part01.tsv": "5e6e711e2d350cba21188c2cb59fa8652403ffab267dbca65abc8d3e73296268"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "southnorth__xielingyun_yezhongxu__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\southnorth__xielingyun_yezhongxu__part01.txt": "4232823ddb0a43a6a57e401bb5b0ce47e02e9769d00a67bce367b579225d03cb",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\southnorth__xielingyun_yezhongxu__part01.tsv": "6151f381a7bd3185e58f46cea3572936c6bc30386a89c6505fb6a30fb0d0106a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\southnorth__xielingyun_yezhongxu__part01.tsv": "8afb9468e5c49962b8e37d00f1980d4e8057c9c0c2356382508a655f9dbe4596"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_01__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_01__part01.txt": "b6fbf1b2439e5dc6a8bd0bb883b0807408df20160291b6adf0c60e0ab7441dfe",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_01__part01.tsv": "5b7e217405cfcf9994c08de2efa431b100c80324a2ba7b84b8b73f90a13af031",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_01__part01.tsv": "a42a6ae00fffb3229a00e278ce67a47791543865b83241d6611dda78c032d92a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_02__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_02__part01.txt": "3054e880c4b9850fb226fb1a7b4e1308d67b8c0806a42c5365c22874cd925837",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_02__part01.tsv": "fff5e3d5309aa7031b3698b28a058fe123a80c330ec2b3421b0b85534423ba4d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_02__part01.tsv": "0237b8d9d26f829152a7715228646e02f1aa9e99dd14cedfeef2d8c554af0fe8"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_03__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_03__part01.txt": "7b937cac527030d6aceeca41b6aeaf1fcae9b5d7065fbdc0a2a802709bfbc27a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_03__part01.tsv": "5306b53643d566545cb859e2fd457979bc15eb3b741dd2f0ce1277978f0485c1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_03__part01.tsv": "c4238bd950304a7e00151bcd692cae359dcb74c1d19c06d0930fcceeae47a07a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_04__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_04__part01.txt": "f2adf994a2307d8596ee1b6ab52bf5ad4a61aa4f05b3321b7ee4249700ccc700",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_04__part01.tsv": "c78ee0d975855df7b96140b45a2678613c111a2333656cc1fff263f1a23b0c15",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_04__part01.tsv": "381067543086d3e609f228d7c5c2a5cad8309519a62d9a3268399a31076c521b"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_05__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_05__part01.txt": "d386562a2482b809ed50d4c20d644e50a6ab5b6df36b2e342249a0a8213ee743",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_05__part01.tsv": "4d7d73486f4ef49e2055303d5234e13a0804fcce4752c50e5b9c97293cdf7753",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_05__part01.tsv": "e51533c0e47344780902335a9b93f774bf743a01b8bba3a992d48eeff03c2e41"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_06__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_06__part01.txt": "db6d0793f54a0afa30929b262d6553f7168835905e7df56689eeabba8a0466f6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_06__part01.tsv": "776b72e83641b0e7958847a63405ff3d24adabcf15080bbd5371ac37c34314b5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_06__part01.tsv": "f06e90f63095c2e694689f6fe0724e5e61eea11650061e99bc49833890707cc8"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_07__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_07__part01.txt": "c906c740539dde93c0725ac95e51b3aa692336de9f81449949e0118e38813025",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_07__part01.tsv": "b1846806cb438d97739ce9c28d16a9948bc3ba4471c6a2102cd68e340d134e69",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_07__part01.tsv": "fec80d9a29879086165db6931df4e8da8776bb107f50b57174587c868894d83a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_08__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_08__part01.txt": "9c28e56d40d735d99e8e1bf935643d94d82c5c61c24ef0b1e15d2d55a2d4a0d0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_08__part01.tsv": "a13ffe6b966d75aa7287d6428cec481c4fe9b518e5093334e73df230f321903e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_08__part01.tsv": "86b3b0435d5aa52a88ac2dfb75c39b50a18ff7d21ddedad7125725cf09cb3cf5"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_09__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_09__part01.txt": "f2e495f4a69c357a704a958f71fe3948df903759cab5c1816bfdb2fc628cd447",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_09__part01.tsv": "dd8b641cbc06cebaf2a9b113f9c8a9d4a9d74498731c6ee777eb6da439083c65",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_09__part01.tsv": "224bc67faccbd7ee040a2c75ebf0220b5350c100faec0e09322d9eea87bc92f4"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_10__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_10__part01.txt": "b5ab38ca600edf3c1d214d4571a99e06f3a1326a9ae4caac5731aca5ec0475d8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_10__part01.tsv": "b82ad0d7eb5efccc759e8970fd018656c7018b5b5c50fd958f6e825b40a6a352",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_10__part01.tsv": "f4db04bbb944cf3239e1c54bd6bf2d51d3335fbd3321c5dc98459000f1ba106b"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_11__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_11__part01.txt": "31c1d344665c141c308c17ccf0838fc6d273aa012cf864d9bca123cfa3bb7602",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_11__part01.tsv": "3983e87e0c45197f85e1d20a01bfe97e291a93dff67749ea6f6b62090b3bea29",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_11__part01.tsv": "851ccab8e1cb7892ee45314860be3673701359f953b3e8f8d1b928697904a7cf"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_12__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_12__part01.txt": "1633b6f52bad4d162ff6e04ed413fa7f5c342b9be5a5b7b67e44225931561194",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_12__part01.tsv": "db7bb190b0e904d01209d8e5bf0e219cb0b21d7ec3f1c5baf0bb66943b27254c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_12__part01.tsv": "500086bcc14ce69a2b987c3bc1b460170fa6bd3662a414914a79b8867505802c"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_13__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_13__part01.txt": "5dc0d9bfd37927edbeeee828fab60f48e6c3c609b3c82438f38a6882b9e2cb23",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_13__part01.tsv": "4fb74cc15ca22d258399826be8f9125881a5ba0f7b3ec4fe2263c4208e61939a",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_13__part01.tsv": "6788719e90c46898891d92269877b54428888e271ecdc57598667ccdd807baf5"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_14__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_14__part01.txt": "c4810656b97cda03d937372e3f55ecc56b06d2870a9a7137ae6b32ef50517b8d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_14__part01.tsv": "5caced04b56b815779fd8cec83732a4d8a08ee07c6ed33c6a811748f54c3f153",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_14__part01.tsv": "cbdc6dc8e04f16a9e230a9dafd6cd270482442ad644a26a1fcbbfba4334cebe9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_15__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_15__part01.txt": "d554dcb2ad7b6cbe8fc83a001436248fd8ad16e5c865584c9855bda32c866d3f",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_15__part01.tsv": "13a1f53f7725901b03f9b8be276f9f069a0c3653b6a49ec292a6af9d87503d7d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_15__part01.tsv": "b7476b502711177b83a47956cba3b4bbcb819204e8bdab8cb907df0dd5462cef"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_16__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_16__part01.txt": "dd7717dcb7aee4b974623b943ca4c215f9ce04482a3aae211fc60f518c8eccd0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_16__part01.tsv": "4f6e039c1b0d630837c8ea865d588b9570d0655a2a0faa843a1450092b0c9fc5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_16__part01.tsv": "f1fbb6c697bcbe0691a8c8eccfd6d2d3672c2bfd356980f37ca87bb718fa97f9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_17__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_17__part01.txt": "3341ca0f70b5993f2b3fb2fd57822be793fe20438b724c651511b0ce66a653ff",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_17__part01.tsv": "2fe5e88f9e9c205e5886a4ce7b0d19e0f945ffc5d9701a9383e45d9ce21bb930",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_17__part01.tsv": "3e7abb591c88328f6263072ffa43cc5c3cc4dba1b0f536a6d3ad9e6d4c654f34"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_18__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_18__part01.txt": "133b793979a8d66cf7b741e14235e95717a1b634e53a6a5a73abba037e35c7bd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_18__part01.tsv": "33afeffc8a99dc49dedc33f62cd79cd576ba8246136c2f8bd1aa9df7816e90eb",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_18__part01.tsv": "7f204840d440dd95e6d68fd6f8260159a1ddbfd8b444a96cc52b84ca38a6f6f9"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_19__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_19__part01.txt": "36cda5cbddb19ca029a3aa13c424ecfab6f0c1c788bb7ed486c832625fcc6e60",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_19__part01.tsv": "8b24165d7982463cca0ce64bda514942f3cd431da1c19a3ce8ed446463989ff6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_19__part01.tsv": "1096923e67afeff640c471c6b437dba0cf3f21c04d4a44c5cafa34eb8badb8a1"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_20__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_20__part01.txt": "ce7fd083b16064876f11da57cd848f89771f767a63d1211c1673c7e1ec0e9ce9",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_20__part01.tsv": "38703b838b6d7c460856c32c4f2d3a5856198c0f3041cee0593142c067779fcd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_20__part01.tsv": "798e16edf18fa8181237888f13ee4ac95d019bdacb19e6916f0a5357c69ba37f"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_21__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_21__part01.txt": "11d86badbc52bef1156c43815b6d28276ef20e92fb25464a3f9ab916ba3baffb",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_21__part01.tsv": "5a4c739c46659343827f663828fa892cee046579588ba76ce064673215c2d0b0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_21__part01.tsv": "81495c6d26075c00c46620496b0ab42e43f03fddaa4656226715d6d5eb96c543"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_22__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_22__part01.txt": "9ff74844da9e7cf5702c12e2b7419f8b40f073b99448e91dc553b0bb187db2ca",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_22__part01.tsv": "7ddd63f0c229e91837c342c571de4847fb1008a4eef6f30b6d53cde9680cea5b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_22__part01.tsv": "5d1d2ae3d4ce913cb3a356958e5a5264c145aefb17d9761c0487c7b13641781c"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_23__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_23__part01.txt": "e40d9a84bcec3982fa19b43d1a69fe6a15ec7da7444afb9b271f36c3061424a5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_23__part01.tsv": "feb2243d63f28da0a1aa0d2f12fe9404603a720ada946cb531facd2d1ccf89e5",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_23__part01.tsv": "d7f4b885ce8473189aa063c46c536ae85f774e76d023e2d37ecab563663d8e30"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_24__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_24__part01.txt": "ae86209bb2bee21f45ba946d688cd2f9770ec407d2661d14d2ea46495166c397",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_24__part01.tsv": "a6b85f94577aebf0ad659f3cf7732e0bc0b1bacdfb25757186de5a11e8b2e324",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_24__part01.tsv": "d804314fb741f08e94d14c3267de95f2c5762b10640d3577ec29efbcec7cc1d5"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_25__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_25__part01.txt": "1b5a40aa8e1eda9b875d189e8fae16dc5cb88f9aadbd0f5a3f9730916a50bb5d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_25__part01.tsv": "241124c9375541c758d2b806101879ca92f19365e297ccce0b47d57364262ae8",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_25__part01.tsv": "305978429511c71532428ad1dbd238042f94bc38d12e0ba93f3c70fab72eba2c"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_26__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_26__part01.txt": "d1780889173ede212d8b27c1df17104e77e3739790ea7b8c0c602419720c280b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_26__part01.tsv": "f4707ca0b561c1269e295117717a9971460a61fa2c43943f1aca9648d120928b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_26__part01.tsv": "1103f7669af080d71c51066920dae959470c53aa485b1482c8d7c03db89f1968"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_27__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_27__part01.txt": "38a7a2263c604eb05edb3d8e3cc5ccf4bae26cfc7f10169e17535e2562772af0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_27__part01.tsv": "f4d61c4ac791b903ebc6547964e35529a8eb273c3bada4ade81ce5886396b6e7",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_27__part01.tsv": "4ff183869d918e81f9ae668b66bd51e812c3f62c228d054bf94e340075706268"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_28__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_28__part01.txt": "0c57ae248b9d078d4a520ef1e6b676e3446aab9456626f80bb24f7def04437b0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_28__part01.tsv": "df41c26aefc81cecd612b871c139cd5109f8eb8ad9d91b2f7b393a4f1e41b7cb",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_28__part01.tsv": "93e623d799c1e28a959bb412a4b158421c3af4c9d8cf1bea65b699daa32e8d59"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_29__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_29__part01.txt": "b742b44c410c716025fb7c5ce8f663f97b84f8df67f5b4df8ac227cc7ff471cd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_29__part01.tsv": "5974d5fc974353bc48a7fa43d9774a16e100df99d4b5b0b582441518171e7b1b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_29__part01.tsv": "6dddd010bb9f3f7b1718a1d966274d9a4799c74bbd5826e861570d70804adef2"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_30__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_30__part01.txt": "9e4b2c771453382620725a63cfece12e27e5d1410ba9359babc251d586c55095",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_30__part01.tsv": "e0147eeed697b39fdfe0209a408b7645d0de68d2c32575c89d6599785b82b14e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_30__part01.tsv": "5a0a6177ebd1f143b74bf8298711c6dd15ccc0f1328b320352c804804a40371d"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_31__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_31__part01.txt": "5bd6e2895931570f499ae2910c34169061b70afca602d7b729eee0a433c1b760",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_31__part01.tsv": "5e8326490c84cd3f5753748b0aa96a4e37b18dff6508b9a3b5b33ed664dfba9c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_31__part01.tsv": "9009dd62ae63e754fad6d0ba83e1c9f3a711dfe0a978d1890783709fba141a7e"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_32__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_32__part01.txt": "f71b2c287ab8a01a1f4fe18084daf2156598ef5ffaa0c8f10cd548a837d02dd2",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_32__part01.tsv": "792890983f5d47682fa4f11516506a8c94335133747f79a421ab3a541ab133ca",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_32__part01.tsv": "35252d3066743a8c167475e65b9c391ce461e8e1b3d78ff5228720dcd5518fcd"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_33__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_33__part01.txt": "c01bd9b732a339912b211a664247a8a2fb0f56cbd974ebd80becad3647eac957",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_33__part01.tsv": "f2b3ce7ed93972f02290bd85da477e44bb57c7f37879f5260b5010c6232f969c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_33__part01.tsv": "811b8d684c6a99887a6ac258a37632ee387300a549c4fa0f43516afada6b1f3e"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_34__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_34__part01.txt": "95ad8e58ef58bc6040bc5bc72f8cf40cfbf31182942456889bbb5a70ab80f237",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_34__part01.tsv": "a521aef39b5bf5abf6de62c6c67fe134612f3d01d0000a972dd4b395b7056050",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_34__part01.tsv": "c151a87fed8b512d3f1d18d03f06201d13979ca4827da1e67a4dd58b98e1b434"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_35__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_35__part01.txt": "95281e9ebaa80d405662dd4b89de748d10d34fb56324e8efd171b48a059398c0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_35__part01.tsv": "bc0d78a2981081749398fd623b182d6bd53c79d1e6eb9a4f93f8ee6aaa512b36",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_35__part01.tsv": "ca426151b238c048b2a7c1250e8e00ebaa655edeafbc6e004bec564b191f7e74"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_36__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_36__part01.txt": "dfb05473b6a2e69feae6ac8b41f6675d5fa9e6f745173a2b7dcef5c21e3fa787",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_36__part01.tsv": "1080af64023c342ac5bc57f9b4969e2d6156c4e131475471730a04e78da4a748",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_36__part01.tsv": "3ef3cdcdd56bced3a8437d202e6a68e37a731c3441b333549e43ba995d29f619"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_37__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_37__part01.txt": "c5de31e92a0accb3370c1a5a48d74dbed914016cf75b9a6fe4a67380c594d17b",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_37__part01.tsv": "c076d4219ea68443063d428fccfc265e5739d818a041f29683b947c4e809ab6e",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_37__part01.tsv": "0d014d7f5366aa55dc3afe8dcf1b1c6b2f54774667d6654cfb1e17be48ddd349"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_38__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_38__part01.txt": "6a78ece409cd8c07e184d2d174ec02a01e9ab553df76b1f83d03a3da252d90ec",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_38__part01.tsv": "849450ff26d2402af43c366d4682089744b1bbcf65ebc36e19b9914b6519ade0",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_38__part01.tsv": "ad674d738eea05027cebf5756b051f30518e18c025e542ba3b6000aa337bdbb4"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_39__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_39__part01.txt": "1b7044cc3452b9880f727ad3a6a83efed8f9c868f700c935cf898a5714e84fbf",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_39__part01.tsv": "bc2bedf9053907e079af0c8e39a89cd11293c43feaa7f55af428357385ae960d",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_39__part01.tsv": "8b1ba7b2e3ea834c8d010127b7848f527cff91be1df83a4ecfd55f24e97bca2a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_40__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_40__part01.txt": "21e7750bfd70dea5b99a7d1695dbf57ec04d81184ef3d583f0ed4c957e927e47",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_40__part01.tsv": "debfd8d7e8b4ed0f35c3b2a08b25bd94c5781d7fa978a313786075ee6924ccdd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_40__part01.tsv": "97541799db719bb312003c05b09dae0a742903eecd061c49ecc7fec2a5f04dbb"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_41__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_41__part01.txt": "8aff287a7149923093cbbf5bd92010e7f398fc2b18984e5b62d0b99bc647eb3c",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_41__part01.tsv": "93157b290b81d4a577ab6f6f99beabf86945d54e983a838ac405898e1cfc6071",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_41__part01.tsv": "ab2e0e9c4fa4b2fbc6a30dac6303681b158ecab77bb2ec651c542072b968c1cd"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_42__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_42__part01.txt": "cadc7b919a08f2d821d4ba3f228130f103d279296e63ff910eaa5fcc0b0a9ec2",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_42__part01.tsv": "e737f37c06f60838d9660cc03bced6b443d7e8ab1cd2c62cc4a09300a5417f71",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_42__part01.tsv": "0c53e3fd90a35aaac08c42e29d4914d39a4e9be1498b5d0157f024bafde21c0a"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_43__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_43__part01.txt": "6b4d9ca7dfd1607b0e596b4eb1e7b56a12a92633126aef82b0c8ad2a004b2a37",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_43__part01.tsv": "f807cac4d309dcdcad31b77922237e53231963c3d5dbbe60b3302110f36b42b1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_43__part01.tsv": "0d364a0edd087d9ffa52c1a90cb9ae75ce5a8f66a4a3f74e2e01bd8f2aab5297"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_44__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_44__part01.txt": "969128e6c94157f2a7fb3a9d84a2765d72336bbe41664348b126550b74781a93",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_44__part01.tsv": "2e216a78a4fa67fb861491e7e6f788164d25dcc3c4ae0f1575e098661a483bf1",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_44__part01.tsv": "497dcee957a62cff52fb61a363acda8bf3e21650ab2de2f67b08131858c9300b"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_45__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_45__part01.txt": "2e934e7895663eb3bde85eb63fff94a5569c4cc113980607320ecb8c1a9129ae",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_45__part01.tsv": "6094a41537e9a93ddef1923cdf7dffbe11452201efb73df80614f18b17d8308f",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_45__part01.tsv": "2dc90558ed20c7e8a51e09ff1610823c973ee625b999e0b45d2780abd6f8fa8f"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_46__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_46__part01.txt": "4e2556e4a2fd9f97e729ec2b1d5057076f6ae7328b78bc38fa19c99e7f93fc52",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_46__part01.tsv": "56880da9260506b838cf6513a04753f6dcc1c6917c782e87aeb7a25a2ad35a46",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_46__part01.tsv": "e6ef05885062af2b329490663f9654640ac96627b56aa45fc36b9c31a5e715a5"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_47__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_47__part01.txt": "4fe2681a56978aaef64575fb2ff4f8c9247442dd18137ce67031a2e22c2a8e01",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_47__part01.tsv": "880a294bb7a148d26c6717824c4816b478e8bf74ec25b43df47327c39ba8a864",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_47__part01.tsv": "31588259f719eeadb88623d49e6bf3491e34c4d724b6ae2ec3cf19c647f5fba1"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_48__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_48__part01.txt": "969f0ac1fcf1b4f14925f0426a0729d32331cdf113a7faa9ad2bcffb613a0bf6",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_48__part01.tsv": "6d3c860c12dff296f79a8c3e7bfe5fa4f38f16d4bd53fed4a3e0568778102250",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_48__part01.tsv": "a485bb020f13b254ce1f285bc6a9328aefe9b41ed99c7434dd28fdd74d6227ce"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_49__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_49__part01.txt": "6e035dc4a92a503003cbe95cdbf8136fe4f09ccefb183b19b8435533d1a48656",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_49__part01.tsv": "bfdb5eacc1fbeff52f24409dbfa754d79653b3701975954014d48c84f91096dd",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_49__part01.tsv": "d82e08d347b7f0fee0061a4f3379abdd0330fca9fdf6efb5aac885e63b3dcbd3"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__liuxie_50__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__liuxie_50__part01.txt": "2a4239dd719c9975539ac585737ee0cc5d897967a4c7c60c6e15c7c21e5de72f",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__liuxie_50__part01.tsv": "7988bf370f679ae9d343620e2045a485d8e4d2a864ec36868d8d7c83d7a8dbad",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__liuxie_50__part01.tsv": "9fe27692b89ae58c208fcf5eb17643055b6109e395d6180cb3018cc0206a0731"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__shipin_01__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__shipin_01__part01.txt": "2c3fc4ddf6fdccfc6651ca874f7ae2a1c723b642c510ea565b3f21a1fd44f9be",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__shipin_01__part01.tsv": "14c1c7fda5c47b51acf7e02db1f043dd4e075fb2829315628767c42b12eca0bc",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__shipin_01__part01.tsv": "e4ab7d6b7f536c9534af7cd6846e96f83ec46e39f6535f72e074b2f71a54c41c"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__shipin_02__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__shipin_02__part01.txt": "6f0d804a411812f528235ba1c543330ef04fb9a3033fb6b1d0d55462dbf63791",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__shipin_02__part01.tsv": "596b8a69d5f39ff7b8fb0d91079871aee4d567693581598bb68ae75618f4ea8f",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__shipin_02__part01.tsv": "c86ca513e6e9fffcdc7766196c52c47bf1d8753911a5e1d6a3923b75a80565b6"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__shipin_03__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__shipin_03__part01.txt": "aeef8fefa6f2ad0b062dc4590fb6e4b80336dede1a2d31f52c9b186e0c3ed4b9",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__shipin_03__part01.tsv": "4b4834856843cd447973d7806114d604a7ada3b12aa034edbd6159301f222c00",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__shipin_03__part01.tsv": "81f2a3d4ce90c50fa1de9afa74e261c6ee6f82e1c608493105a3c9d3c1b30abe"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    },
+    {
+      "unit_id": "liuxie_shipin__shipin_04__part01",
+      "mode": "validated_v21_reuse",
+      "attempts": [
+        {
+          "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+          "detail": {
+            "root": "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21",
+            "files": {
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segments\\建安及以後\\liuxie_shipin__shipin_04__part01.txt": "900fd7491773a26944cd1bdb2780df2f4aa0a0f3a29468848108191ece5c2f13",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\spans\\建安及以後\\liuxie_shipin__shipin_04__part01.tsv": "e15f7d66d4270f66696b5fef461db4f9a3a42b08dd20631f38d75a07764db9f7",
+              "C:\\CHI3242文本發掘\\第一次作業\\data\\qi_corpus_analysis_v21\\segment_index\\建安及以後\\liuxie_shipin__shipin_04__part01.tsv": "541e7e9a2b0bfa9feeb46a5deb2a2f352d6c115e764f540f74fe4a97ea72297e"
+            }
+          },
+          "accepted": true
+        }
+      ]
+    }
+  ],
+  "runs": {
+    "window5": {
+      "N_all_tokens_or_segments": 35138,
+      "N_fisher": 35032,
+      "R1": 729,
+      "target_tokens": 106,
+      "rows": 332,
+      "candidate_types_tested": 427,
+      "independent_obs_exp_ratio_fisher_check": "passed",
+      "correction": null
+    },
+    "window10": {
+      "N_all_tokens_or_segments": 35138,
+      "N_fisher": 35032,
+      "R1": 1036,
+      "target_tokens": 106,
+      "rows": 409,
+      "candidate_types_tested": 610,
+      "independent_obs_exp_ratio_fisher_check": "passed",
+      "correction": null
+    },
+    "sentence": {
+      "N_all_tokens_or_segments": 3966,
+      "N_fisher": 3966,
+      "R1": 102,
+      "target_tokens": 106,
+      "rows": 511,
+      "candidate_types_tested": 742,
+      "independent_obs_exp_ratio_fisher_check": "passed",
+      "correction": null
+    }
+  },
+  "example_rows": 1252,
+  "verification": {
+    "input_lock": "passed",
+    "all_selected_units_processed": "passed",
+    "target_position_conservation": "passed",
+    "quote_boundaries": "passed",
+    "token_reconstruction": "passed",
+    "obs_exp_ratio_fisher_all_rows": "passed",
+    "significant_row_completeness": "passed",
+    "real_examples": "passed"
+  },
+  "output_sha256": {
+    "collocates_sentence.csv": "0110da14242397afba1b0474084dc42666fab2a1a7926e5ec39da530687573e3",
+    "collocates_window10.csv": "ef36030bfcdef10a37f6e3b175d5ca51e922ffbfeb7318ef2e3d4c06825a70e1",
+    "collocates_window5.csv": "018337dc6e0126f1218a10e82db372b90465b17d3e3ddbd47b3b85acd69f7759",
+    "collocate_examples.csv": "401b6ba7f47fa8e19bffdab4c07abbaf85df0aa1b24e826b81550d003269da62",
+    "method_notes.txt": "ee0f3d6ac5635022a6e13d518257bf5618459cd607b15439696527250c102e69",
+    "qi_hits.csv": "072780811d2fa68e65af7d86a31c67468abeac029fdb4f76d420592da2d600ab",
+    "results.html": "7e4737e96cc33bdf39e68494df9c0bc6881bbbc32000aec15ddb07a9d287ad63",
+    "table_verification.csv": "d5d0fda4fbc6da35ad2e4be5374576188e8a490e63050fc16f5796399493f010",
+    "unit_verification.csv": "c699f4eceec8e21037631da25b6d092e6d32f25463909010eb6030c03ca14bdf"
+  },
+  "processed_sha256": {
+    "segments/liuxie_shipin__liuxie_01__part01.txt": "b6fbf1b2439e5dc6a8bd0bb883b0807408df20160291b6adf0c60e0ab7441dfe",
+    "segments/liuxie_shipin__liuxie_02__part01.txt": "3054e880c4b9850fb226fb1a7b4e1308d67b8c0806a42c5365c22874cd925837",
+    "segments/liuxie_shipin__liuxie_03__part01.txt": "7b937cac527030d6aceeca41b6aeaf1fcae9b5d7065fbdc0a2a802709bfbc27a",
+    "segments/liuxie_shipin__liuxie_04__part01.txt": "f2adf994a2307d8596ee1b6ab52bf5ad4a61aa4f05b3321b7ee4249700ccc700",
+    "segments/liuxie_shipin__liuxie_05__part01.txt": "d386562a2482b809ed50d4c20d644e50a6ab5b6df36b2e342249a0a8213ee743",
+    "segments/liuxie_shipin__liuxie_06__part01.txt": "db6d0793f54a0afa30929b262d6553f7168835905e7df56689eeabba8a0466f6",
+    "segments/liuxie_shipin__liuxie_07__part01.txt": "c906c740539dde93c0725ac95e51b3aa692336de9f81449949e0118e38813025",
+    "segments/liuxie_shipin__liuxie_08__part01.txt": "9c28e56d40d735d99e8e1bf935643d94d82c5c61c24ef0b1e15d2d55a2d4a0d0",
+    "segments/liuxie_shipin__liuxie_09__part01.txt": "f2e495f4a69c357a704a958f71fe3948df903759cab5c1816bfdb2fc628cd447",
+    "segments/liuxie_shipin__liuxie_10__part01.txt": "b5ab38ca600edf3c1d214d4571a99e06f3a1326a9ae4caac5731aca5ec0475d8",
+    "segments/liuxie_shipin__liuxie_11__part01.txt": "31c1d344665c141c308c17ccf0838fc6d273aa012cf864d9bca123cfa3bb7602",
+    "segments/liuxie_shipin__liuxie_12__part01.txt": "1633b6f52bad4d162ff6e04ed413fa7f5c342b9be5a5b7b67e44225931561194",
+    "segments/liuxie_shipin__liuxie_13__part01.txt": "5dc0d9bfd37927edbeeee828fab60f48e6c3c609b3c82438f38a6882b9e2cb23",
+    "segments/liuxie_shipin__liuxie_14__part01.txt": "c4810656b97cda03d937372e3f55ecc56b06d2870a9a7137ae6b32ef50517b8d",
+    "segments/liuxie_shipin__liuxie_15__part01.txt": "d554dcb2ad7b6cbe8fc83a001436248fd8ad16e5c865584c9855bda32c866d3f",
+    "segments/liuxie_shipin__liuxie_16__part01.txt": "dd7717dcb7aee4b974623b943ca4c215f9ce04482a3aae211fc60f518c8eccd0",
+    "segments/liuxie_shipin__liuxie_17__part01.txt": "3341ca0f70b5993f2b3fb2fd57822be793fe20438b724c651511b0ce66a653ff",
+    "segments/liuxie_shipin__liuxie_18__part01.txt": "133b793979a8d66cf7b741e14235e95717a1b634e53a6a5a73abba037e35c7bd",
+    "segments/liuxie_shipin__liuxie_19__part01.txt": "36cda5cbddb19ca029a3aa13c424ecfab6f0c1c788bb7ed486c832625fcc6e60",
+    "segments/liuxie_shipin__liuxie_20__part01.txt": "ce7fd083b16064876f11da57cd848f89771f767a63d1211c1673c7e1ec0e9ce9",
+    "segments/liuxie_shipin__liuxie_21__part01.txt": "11d86badbc52bef1156c43815b6d28276ef20e92fb25464a3f9ab916ba3baffb",
+    "segments/liuxie_shipin__liuxie_22__part01.txt": "9ff74844da9e7cf5702c12e2b7419f8b40f073b99448e91dc553b0bb187db2ca",
+    "segments/liuxie_shipin__liuxie_23__part01.txt": "e40d9a84bcec3982fa19b43d1a69fe6a15ec7da7444afb9b271f36c3061424a5",
+    "segments/liuxie_shipin__liuxie_24__part01.txt": "ae86209bb2bee21f45ba946d688cd2f9770ec407d2661d14d2ea46495166c397",
+    "segments/liuxie_shipin__liuxie_25__part01.txt": "1b5a40aa8e1eda9b875d189e8fae16dc5cb88f9aadbd0f5a3f9730916a50bb5d",
+    "segments/liuxie_shipin__liuxie_26__part01.txt": "d1780889173ede212d8b27c1df17104e77e3739790ea7b8c0c602419720c280b",
+    "segments/liuxie_shipin__liuxie_27__part01.txt": "38a7a2263c604eb05edb3d8e3cc5ccf4bae26cfc7f10169e17535e2562772af0",
+    "segments/liuxie_shipin__liuxie_28__part01.txt": "0c57ae248b9d078d4a520ef1e6b676e3446aab9456626f80bb24f7def04437b0",
+    "segments/liuxie_shipin__liuxie_29__part01.txt": "b742b44c410c716025fb7c5ce8f663f97b84f8df67f5b4df8ac227cc7ff471cd",
+    "segments/liuxie_shipin__liuxie_30__part01.txt": "9e4b2c771453382620725a63cfece12e27e5d1410ba9359babc251d586c55095",
+    "segments/liuxie_shipin__liuxie_31__part01.txt": "5bd6e2895931570f499ae2910c34169061b70afca602d7b729eee0a433c1b760",
+    "segments/liuxie_shipin__liuxie_32__part01.txt": "f71b2c287ab8a01a1f4fe18084daf2156598ef5ffaa0c8f10cd548a837d02dd2",
+    "segments/liuxie_shipin__liuxie_33__part01.txt": "c01bd9b732a339912b211a664247a8a2fb0f56cbd974ebd80becad3647eac957",
+    "segments/liuxie_shipin__liuxie_34__part01.txt": "95ad8e58ef58bc6040bc5bc72f8cf40cfbf31182942456889bbb5a70ab80f237",
+    "segments/liuxie_shipin__liuxie_35__part01.txt": "95281e9ebaa80d405662dd4b89de748d10d34fb56324e8efd171b48a059398c0",
+    "segments/liuxie_shipin__liuxie_36__part01.txt": "dfb05473b6a2e69feae6ac8b41f6675d5fa9e6f745173a2b7dcef5c21e3fa787",
+    "segments/liuxie_shipin__liuxie_37__part01.txt": "c5de31e92a0accb3370c1a5a48d74dbed914016cf75b9a6fe4a67380c594d17b",
+    "segments/liuxie_shipin__liuxie_38__part01.txt": "6a78ece409cd8c07e184d2d174ec02a01e9ab553df76b1f83d03a3da252d90ec",
+    "segments/liuxie_shipin__liuxie_39__part01.txt": "1b7044cc3452b9880f727ad3a6a83efed8f9c868f700c935cf898a5714e84fbf",
+    "segments/liuxie_shipin__liuxie_40__part01.txt": "21e7750bfd70dea5b99a7d1695dbf57ec04d81184ef3d583f0ed4c957e927e47",
+    "segments/liuxie_shipin__liuxie_41__part01.txt": "8aff287a7149923093cbbf5bd92010e7f398fc2b18984e5b62d0b99bc647eb3c",
+    "segments/liuxie_shipin__liuxie_42__part01.txt": "cadc7b919a08f2d821d4ba3f228130f103d279296e63ff910eaa5fcc0b0a9ec2",
+    "segments/liuxie_shipin__liuxie_43__part01.txt": "6b4d9ca7dfd1607b0e596b4eb1e7b56a12a92633126aef82b0c8ad2a004b2a37",
+    "segments/liuxie_shipin__liuxie_44__part01.txt": "969128e6c94157f2a7fb3a9d84a2765d72336bbe41664348b126550b74781a93",
+    "segments/liuxie_shipin__liuxie_45__part01.txt": "2e934e7895663eb3bde85eb63fff94a5569c4cc113980607320ecb8c1a9129ae",
+    "segments/liuxie_shipin__liuxie_46__part01.txt": "4e2556e4a2fd9f97e729ec2b1d5057076f6ae7328b78bc38fa19c99e7f93fc52",
+    "segments/liuxie_shipin__liuxie_47__part01.txt": "4fe2681a56978aaef64575fb2ff4f8c9247442dd18137ce67031a2e22c2a8e01",
+    "segments/liuxie_shipin__liuxie_48__part01.txt": "969f0ac1fcf1b4f14925f0426a0729d32331cdf113a7faa9ad2bcffb613a0bf6",
+    "segments/liuxie_shipin__liuxie_49__part01.txt": "6e035dc4a92a503003cbe95cdbf8136fe4f09ccefb183b19b8435533d1a48656",
+    "segments/liuxie_shipin__liuxie_50__part01.txt": "2a4239dd719c9975539ac585737ee0cc5d897967a4c7c60c6e15c7c21e5de72f",
+    "segments/liuxie_shipin__shipin_01__part01.txt": "2c3fc4ddf6fdccfc6651ca874f7ae2a1c723b642c510ea565b3f21a1fd44f9be",
+    "segments/liuxie_shipin__shipin_02__part01.txt": "6f0d804a411812f528235ba1c543330ef04fb9a3033fb6b1d0d55462dbf63791",
+    "segments/liuxie_shipin__shipin_03__part01.txt": "aeef8fefa6f2ad0b062dc4590fb6e4b80336dede1a2d31f52c9b186e0c3ed4b9",
+    "segments/liuxie_shipin__shipin_04__part01.txt": "900fd7491773a26944cd1bdb2780df2f4aa0a0f3a29468848108191ece5c2f13",
+    "segments/southnorth__jiangyan_zati__part01.txt": "da7e060842ff6c038e34cdb0ff5bf5104a3a069f7949baef7417f3dcc34ab320",
+    "segments/southnorth__lujue_yushenyue__part01.txt": "a70805710488564d911ac2d5daf8c025567cc8d4e4d0d332b33840a0412fa412",
+    "segments/southnorth__peiziye_diaochong__part01.txt": "5f07f5d8dba2e45584d89cac25959a80661ecea5f3955ae40a25320461ede4e1",
+    "segments/southnorth__shenyue_baoliuyao__part01.txt": "5b5e11af3b495b2f6daca01eb9393d53586cd3eef8ee52708697cb694ad6022e",
+    "segments/southnorth__shenyue_baowangjun__part01.txt": "eaa4f4c6f05f1c36f430e386a92e6a34d885c41e243ec176484c4a19a69fec8d",
+    "segments/southnorth__shenyue_daleai__part01.txt": "b4c18ca19646efcee564863309bb5e3d2c91a2040ee00da2251e0c77d3995bbd",
+    "segments/southnorth__shenyue_daluejue__part01.txt": "b9f690966e525e9a0cddf5691563f7e48b8e2e66d129e3f0b8aeb5fa0359e6fd",
+    "segments/southnorth__shenyue_xielingyunlun__part01.txt": "28f0b8a51c315e2dea30a1e4b7aef627a8e110a170e7110a1189c153e06ef16e",
+    "segments/southnorth__shenyue_yufanshuzeng__part01.txt": "2581bb069b54e748bc78ee23cda67ea9d74aa4d8b7e47bf27fd12c2fd9c499ba",
+    "segments/southnorth__xiaoyi_neidianxu__part01.txt": "97455b90b5d760060239c090f8cb3b65aa5f3a092de21e4f3e9327037051bbb0",
+    "segments/southnorth__xiaozixian_wenxue__part01.txt": "7b494a23c7e1c0c3bbe7cdb350c8bb837970ec9cb40a90418992692edfad2bfd",
+    "segments/southnorth__xielingyun_yezhongxu__part01.txt": "4232823ddb0a43a6a57e401bb5b0ce47e02e9769d00a67bce367b579225d03cb",
+    "segments/weijin__caopi_lunwen__part01.txt": "cfb56f5b0cc9c62fb1a545ba95157eabe3fff42c87ca26379d56050570756587",
+    "segments/weijin__caopi_wuzhi__part01.txt": "2d5cc64aeb8938e76be169efdf12a020b9b5caabb13babecbfebfb65fb6accf8",
+    "segments/weijin__caozhi_qianlu__part01.txt": "ec03d4275ec072f7e83ced5fe7d934e8805de2010e2dea3133b71d09fc85a5fc",
+    "segments/weijin__caozhi_qiqi__part01.txt": "ba6571e97d99ffd7af822e71dfe3a9f63705b8625ce3ad8796fd5b0993d8499f",
+    "segments/weijin__caozhi_yang__part01.txt": "c492360df2c009263f46e2e05ee79a7649ae4975b2f04c6f69eccdb51271e58e",
+    "segments/weijin__chenlin_donge__part01.txt": "5b999e5bedd47692406a50f4e7c3f6d10e5782e72f1e70f057facc96aeda050b",
+    "segments/weijin__fuxuan_lianzhu__part01.txt": "a49267a305a21c9996ba39f6e6ee90c645b6dc30c8b21f1e6332791512ce1c66",
+    "segments/weijin__fuxuan_qimo__part01.txt": "c77fef150cdec24bd842ce752632f6c09e12141dbb26160a1cdddbfa7e50a3ed",
+    "segments/weijin__fuxuan_sichou__part01.txt": "ce21cfaac798313d7ff79be10cc0bd1584fafb157898e904fc0e2b31f3437cbc",
+    "segments/weijin__gehong_文行__part01.txt": "11b4ff6fa47947ad2b60aaee18bbc9b1cedcb2acd42866624d34923305e01d5a",
+    "segments/weijin__gehong_辭義__part01.txt": "a518f24875823c4edf5ba12b25251a5b16edabe9e9e4a756039cda6362ce62ca",
+    "segments/weijin__gehong_鈞世__part01.txt": "c7a2f782a28457af7bcb6ebb0e0c3bca897cbf5b12621f03f1e93c478697c6ef",
+    "segments/weijin__huangfu_sandu__part01.txt": "640d0cd0c33c7487f491f3a9a9e238cde7fcd0b0f7089b15d8831b7462948b88",
+    "segments/weijin__lichong_hanlin__part01.txt": "5e79668f892db54f3f69edd7ac133e9e20885e441145fbed70a4368d6e656d4d",
+    "segments/weijin__lichong_hanlin__part02.txt": "748cbea57af34b8937a9c740f41f125d8456a127ebc7ad169e60ebb78a413da1",
+    "segments/weijin__lichong_hanlin__part03.txt": "0f37d2589fc15195eed93391a2f76176bd63fa32665395f6a0d52401a97b6719",
+    "segments/weijin__lichong_hanlin__part04.txt": "e176823e6d34c8f9509699581cecdbea944d1938d4309d2b244ad7516cfade41",
+    "segments/weijin__lichong_hanlin__part05.txt": "b7a0fa211e0eb009d91caf85db89371f586ceaff28833fff2a063eb39b6ece4a",
+    "segments/weijin__lichong_hanlin__part06.txt": "7597177116d3ecdfb432ea9992ec73da689a3d98b39c2e4b939b9f2eef370cd5",
+    "segments/weijin__lichong_hanlin__part07.txt": "c050c01860d875ec8d50e6e4b6d60f75f320a8867878bcc08b0d5c419bd62d6c",
+    "segments/weijin__lichong_hanlin__part08.txt": "38011304304eb283db46f376d023917a486a97e0d9b824a1a233ab90d764e4be",
+    "segments/weijin__luji_wenfu__part01.txt": "eee212d2e8e87b57be0f525fe2c30e4acf68f9a1d9d6fa73a6db16bc4e223140",
+    "segments/weijin__luyun_pingyuan_03__part01.txt": "5d40ea3c0948709a953cdb3316107a25abe9acea0d4da177ea30a99a99dc5892",
+    "segments/weijin__luyun_pingyuan_04__part01.txt": "faacc672b3e110b84dda8fadc036f992619661eaa707a823197a84a9c001d43c",
+    "segments/weijin__luyun_pingyuan_05__part01.txt": "4a4323b8f3a7be30424adf6a685aa10b5f1f338b866453c84e68539512486b3c",
+    "segments/weijin__luyun_pingyuan_06__part01.txt": "72d1cae8836b794b9ab4d22939d55cd5151954071ffb8ff6ff8eb4122fef9b38",
+    "segments/weijin__luyun_pingyuan_07__part01.txt": "292215e2f2c477a0529ff308110d565d07765f48f406ff732163f437d2d8cd1c",
+    "segments/weijin__luyun_pingyuan_09__part01.txt": "917567cbf611403ad9d8fde4b53ba0dcadaf38d97cc0d720c8fdb90d226345e5",
+    "segments/weijin__luyun_pingyuan_10__part01.txt": "3d09813ee0b9d16a7e71c0ee69b5c400c753b4339f7304480752664c71bf13a5",
+    "segments/weijin__luyun_pingyuan_11__part01.txt": "017dfdb21c3a9f6f07d4b76b9837da931c73f8e352522942f40275115c41ce4d",
+    "segments/weijin__luyun_pingyuan_12__part01.txt": "c33629fd6304e6c81a4ca7b8479dd6b0e78ef6e6b73b32f7b4759944f92ad377",
+    "segments/weijin__luyun_pingyuan_13__part01.txt": "4b747dcc47865737beb666d90e20e05b5d2d89f4199f7fd3577dbc85db763ab9",
+    "segments/weijin__luyun_pingyuan_14__part01.txt": "3f656c9a334239877af9043edb66eb962b651b7e58d20141cd8878d60bbba15b",
+    "segments/weijin__luyun_pingyuan_15__part01.txt": "9a151818adc92168be51c3c9be3416775e2cd7bbebf6f18f0c4b836ba75572cc",
+    "segments/weijin__luyun_pingyuan_16__part01.txt": "e539baa5fb9995f256398fb9119de66b3ec465f5a503f61a3bd82f091d7072ca",
+    "segments/weijin__luyun_pingyuan_17__part01.txt": "f3a97002e7aac664134fa0f4137cfa6053a61f59c92423c27f01fa372c635a08",
+    "segments/weijin__luyun_pingyuan_18__part01.txt": "12ab033c7404e0ad80242cc464884de6ca8a3be7c6d18e5dc995ef8d1da6bb85",
+    "segments/weijin__luyun_pingyuan_19__part01.txt": "d478371eec02dd3667cca355b47828e20b08414c9ee3ebc7498749d27b35c65c",
+    "segments/weijin__luyun_pingyuan_20__part01.txt": "9a7c752c7a37f24a42d8e3362d329945a39e23d60199389ec8fcd875a6b16c25",
+    "segments/weijin__luyun_pingyuan_21__part01.txt": "ee7b6b0a49522bca991ecea9e2898dd101aaf601970664567eafc6faa9915556",
+    "segments/weijin__luyun_pingyuan_22__part01.txt": "b66f7f855a5920d15f636b64f6755a91c21518f08f9f34ccc01bb5c897ca7971",
+    "segments/weijin__luyun_pingyuan_25__part01.txt": "d386789d28518cd4048022d7e723030b5a6e28d4d2b60e82846f6d7c201a7bd5",
+    "segments/weijin__luyun_pingyuan_26__part01.txt": "716a8bf5c06509229c342bc1a59df799a660c52b493bc095d95452c257a91e59",
+    "segments/weijin__luyun_pingyuan_27__part01.txt": "618b0530e0cd91e474c0a443c94bf51bfcdc135985af14ab1a442d59fb278cfe",
+    "segments/weijin__luyun_pingyuan_29__part01.txt": "a2de4ba10cd9b4c1eb83d2f6a87c964483d2d342c13c2a454026c930a3f40799",
+    "segments/weijin__luyun_pingyuan_31__part01.txt": "28dee3011d18588ced9b5626f8134defa739fa318c977b7f05a6f270fec65a16",
+    "segments/weijin__luyun_pingyuan_32__part01.txt": "d61d1bf452ba1ccfc0ee7a28f928b59a52d0b6b37e4607999e8c0455fb264ee5",
+    "segments/weijin__luyun_pingyuan_34__part01.txt": "8f23e483f94536b061368e6d60b3f7b20c659607cd83d965cd64076ed1a46534",
+    "segments/weijin__luyun_pingyuan_35__part01.txt": "a7652f407dba176b7beebfbc60e571d24251bd56d97f78f417fef37a2894b6a7",
+    "segments/weijin__yangxiu_lin__part01.txt": "2fa2af1b114e162f32420d942480afb8cbeee466f2db2f03835e713b49408752",
+    "segments/weijin__zhiyu_liubie__part01.txt": "ac4103b299099943a075f96ba665168523b3d239dd4c817588bd5e6f37c131d0",
+    "segments/weijin__zhiyu_liubie__part02.txt": "32914af537dc74ebf15ee8e65579760fdb8663b2fb9a0b03d0d17afe1c5bc0fb",
+    "segments/weijin__zhiyu_liubie__part03.txt": "f3096497e7eaacb627c614ddb14135f54c389ebbd314bf87d334febfca2e2d04",
+    "segments/weijin__zhiyu_liubie__part04.txt": "46d952a0373712263f41f42c984db9aec434e74d78d4e1cf583d3f3243c3a687",
+    "segments/weijin__zhiyu_liubie__part05.txt": "aa909874a6ff137388a9586cf359f0fbb02399b98fb3229f40f3726f6f44cd65",
+    "segments/weijin__zhiyu_liubie__part06.txt": "e72dfc6339aec4fe6bf4b9366c212853d1a246eefcbea5ff5993c43744abba24",
+    "segments/weijin__zhiyu_liubie__part07.txt": "d624332e452a4d912ed714fa886920d61762ded57c44718562f5dec596537fee",
+    "segments/weijin__zhiyu_liubie__part08.txt": "feec29ba8622cae3099bd67027d19d370e034ca8153c235b222bb500de579b64",
+    "segments/weijin__zhiyu_liubie__part09.txt": "4fb9cde47fbfad7aaff8df3abd420c74c3920c463c9598d6d291207e355841c0",
+    "segments/weijin__zhiyu_liubie__part10.txt": "b1a9382139f4105ea5196cdd2d074299a7a88795cc95d15b898569a41fe94c33",
+    "segments/weijin__zhiyu_liubie__part11.txt": "fcb21d36fbd7745d4273d8a5b591ba75c1fbe6b330a96aec19e3d280e39b93a2",
+    "segments/weijin__zuosi_sandu__part01.txt": "ac12eccd4af326a32ffb05acb16d0ab9e3c6f92024a412b5385d28d78fb42ef1",
+    "segment_index/liuxie_shipin__liuxie_01__part01.tsv": "a42a6ae00fffb3229a00e278ce67a47791543865b83241d6611dda78c032d92a",
+    "segment_index/liuxie_shipin__liuxie_02__part01.tsv": "0237b8d9d26f829152a7715228646e02f1aa9e99dd14cedfeef2d8c554af0fe8",
+    "segment_index/liuxie_shipin__liuxie_03__part01.tsv": "c4238bd950304a7e00151bcd692cae359dcb74c1d19c06d0930fcceeae47a07a",
+    "segment_index/liuxie_shipin__liuxie_04__part01.tsv": "381067543086d3e609f228d7c5c2a5cad8309519a62d9a3268399a31076c521b",
+    "segment_index/liuxie_shipin__liuxie_05__part01.tsv": "e51533c0e47344780902335a9b93f774bf743a01b8bba3a992d48eeff03c2e41",
+    "segment_index/liuxie_shipin__liuxie_06__part01.tsv": "f06e90f63095c2e694689f6fe0724e5e61eea11650061e99bc49833890707cc8",
+    "segment_index/liuxie_shipin__liuxie_07__part01.tsv": "fec80d9a29879086165db6931df4e8da8776bb107f50b57174587c868894d83a",
+    "segment_index/liuxie_shipin__liuxie_08__part01.tsv": "86b3b0435d5aa52a88ac2dfb75c39b50a18ff7d21ddedad7125725cf09cb3cf5",
+    "segment_index/liuxie_shipin__liuxie_09__part01.tsv": "224bc67faccbd7ee040a2c75ebf0220b5350c100faec0e09322d9eea87bc92f4",
+    "segment_index/liuxie_shipin__liuxie_10__part01.tsv": "f4db04bbb944cf3239e1c54bd6bf2d51d3335fbd3321c5dc98459000f1ba106b",
+    "segment_index/liuxie_shipin__liuxie_11__part01.tsv": "851ccab8e1cb7892ee45314860be3673701359f953b3e8f8d1b928697904a7cf",
+    "segment_index/liuxie_shipin__liuxie_12__part01.tsv": "500086bcc14ce69a2b987c3bc1b460170fa6bd3662a414914a79b8867505802c",
+    "segment_index/liuxie_shipin__liuxie_13__part01.tsv": "6788719e90c46898891d92269877b54428888e271ecdc57598667ccdd807baf5",
+    "segment_index/liuxie_shipin__liuxie_14__part01.tsv": "cbdc6dc8e04f16a9e230a9dafd6cd270482442ad644a26a1fcbbfba4334cebe9",
+    "segment_index/liuxie_shipin__liuxie_15__part01.tsv": "b7476b502711177b83a47956cba3b4bbcb819204e8bdab8cb907df0dd5462cef",
+    "segment_index/liuxie_shipin__liuxie_16__part01.tsv": "f1fbb6c697bcbe0691a8c8eccfd6d2d3672c2bfd356980f37ca87bb718fa97f9",
+    "segment_index/liuxie_shipin__liuxie_17__part01.tsv": "3e7abb591c88328f6263072ffa43cc5c3cc4dba1b0f536a6d3ad9e6d4c654f34",
+    "segment_index/liuxie_shipin__liuxie_18__part01.tsv": "7f204840d440dd95e6d68fd6f8260159a1ddbfd8b444a96cc52b84ca38a6f6f9",
+    "segment_index/liuxie_shipin__liuxie_19__part01.tsv": "1096923e67afeff640c471c6b437dba0cf3f21c04d4a44c5cafa34eb8badb8a1",
+    "segment_index/liuxie_shipin__liuxie_20__part01.tsv": "798e16edf18fa8181237888f13ee4ac95d019bdacb19e6916f0a5357c69ba37f",
+    "segment_index/liuxie_shipin__liuxie_21__part01.tsv": "81495c6d26075c00c46620496b0ab42e43f03fddaa4656226715d6d5eb96c543",
+    "segment_index/liuxie_shipin__liuxie_22__part01.tsv": "5d1d2ae3d4ce913cb3a356958e5a5264c145aefb17d9761c0487c7b13641781c",
+    "segment_index/liuxie_shipin__liuxie_23__part01.tsv": "d7f4b885ce8473189aa063c46c536ae85f774e76d023e2d37ecab563663d8e30",
+    "segment_index/liuxie_shipin__liuxie_24__part01.tsv": "d804314fb741f08e94d14c3267de95f2c5762b10640d3577ec29efbcec7cc1d5",
+    "segment_index/liuxie_shipin__liuxie_25__part01.tsv": "305978429511c71532428ad1dbd238042f94bc38d12e0ba93f3c70fab72eba2c",
+    "segment_index/liuxie_shipin__liuxie_26__part01.tsv": "1103f7669af080d71c51066920dae959470c53aa485b1482c8d7c03db89f1968",
+    "segment_index/liuxie_shipin__liuxie_27__part01.tsv": "4ff183869d918e81f9ae668b66bd51e812c3f62c228d054bf94e340075706268",
+    "segment_index/liuxie_shipin__liuxie_28__part01.tsv": "93e623d799c1e28a959bb412a4b158421c3af4c9d8cf1bea65b699daa32e8d59",
+    "segment_index/liuxie_shipin__liuxie_29__part01.tsv": "6dddd010bb9f3f7b1718a1d966274d9a4799c74bbd5826e861570d70804adef2",
+    "segment_index/liuxie_shipin__liuxie_30__part01.tsv": "5a0a6177ebd1f143b74bf8298711c6dd15ccc0f1328b320352c804804a40371d",
+    "segment_index/liuxie_shipin__liuxie_31__part01.tsv": "9009dd62ae63e754fad6d0ba83e1c9f3a711dfe0a978d1890783709fba141a7e",
+    "segment_index/liuxie_shipin__liuxie_32__part01.tsv": "35252d3066743a8c167475e65b9c391ce461e8e1b3d78ff5228720dcd5518fcd",
+    "segment_index/liuxie_shipin__liuxie_33__part01.tsv": "811b8d684c6a99887a6ac258a37632ee387300a549c4fa0f43516afada6b1f3e",
+    "segment_index/liuxie_shipin__liuxie_34__part01.tsv": "c151a87fed8b512d3f1d18d03f06201d13979ca4827da1e67a4dd58b98e1b434",
+    "segment_index/liuxie_shipin__liuxie_35__part01.tsv": "ca426151b238c048b2a7c1250e8e00ebaa655edeafbc6e004bec564b191f7e74",
+    "segment_index/liuxie_shipin__liuxie_36__part01.tsv": "3ef3cdcdd56bced3a8437d202e6a68e37a731c3441b333549e43ba995d29f619",
+    "segment_index/liuxie_shipin__liuxie_37__part01.tsv": "0d014d7f5366aa55dc3afe8dcf1b1c6b2f54774667d6654cfb1e17be48ddd349",
+    "segment_index/liuxie_shipin__liuxie_38__part01.tsv": "ad674d738eea05027cebf5756b051f30518e18c025e542ba3b6000aa337bdbb4",
+    "segment_index/liuxie_shipin__liuxie_39__part01.tsv": "8b1ba7b2e3ea834c8d010127b7848f527cff91be1df83a4ecfd55f24e97bca2a",
+    "segment_index/liuxie_shipin__liuxie_40__part01.tsv": "97541799db719bb312003c05b09dae0a742903eecd061c49ecc7fec2a5f04dbb",
+    "segment_index/liuxie_shipin__liuxie_41__part01.tsv": "ab2e0e9c4fa4b2fbc6a30dac6303681b158ecab77bb2ec651c542072b968c1cd",
+    "segment_index/liuxie_shipin__liuxie_42__part01.tsv": "0c53e3fd90a35aaac08c42e29d4914d39a4e9be1498b5d0157f024bafde21c0a",
+    "segment_index/liuxie_shipin__liuxie_43__part01.tsv": "0d364a0edd087d9ffa52c1a90cb9ae75ce5a8f66a4a3f74e2e01bd8f2aab5297",
+    "segment_index/liuxie_shipin__liuxie_44__part01.tsv": "497dcee957a62cff52fb61a363acda8bf3e21650ab2de2f67b08131858c9300b",
+    "segment_index/liuxie_shipin__liuxie_45__part01.tsv": "2dc90558ed20c7e8a51e09ff1610823c973ee625b999e0b45d2780abd6f8fa8f",
+    "segment_index/liuxie_shipin__liuxie_46__part01.tsv": "e6ef05885062af2b329490663f9654640ac96627b56aa45fc36b9c31a5e715a5",
+    "segment_index/liuxie_shipin__liuxie_47__part01.tsv": "31588259f719eeadb88623d49e6bf3491e34c4d724b6ae2ec3cf19c647f5fba1",
+    "segment_index/liuxie_shipin__liuxie_48__part01.tsv": "a485bb020f13b254ce1f285bc6a9328aefe9b41ed99c7434dd28fdd74d6227ce",
+    "segment_index/liuxie_shipin__liuxie_49__part01.tsv": "d82e08d347b7f0fee0061a4f3379abdd0330fca9fdf6efb5aac885e63b3dcbd3",
+    "segment_index/liuxie_shipin__liuxie_50__part01.tsv": "9fe27692b89ae58c208fcf5eb17643055b6109e395d6180cb3018cc0206a0731",
+    "segment_index/liuxie_shipin__shipin_01__part01.tsv": "e4ab7d6b7f536c9534af7cd6846e96f83ec46e39f6535f72e074b2f71a54c41c",
+    "segment_index/liuxie_shipin__shipin_02__part01.tsv": "c86ca513e6e9fffcdc7766196c52c47bf1d8753911a5e1d6a3923b75a80565b6",
+    "segment_index/liuxie_shipin__shipin_03__part01.tsv": "81f2a3d4ce90c50fa1de9afa74e261c6ee6f82e1c608493105a3c9d3c1b30abe",
+    "segment_index/liuxie_shipin__shipin_04__part01.tsv": "541e7e9a2b0bfa9feeb46a5deb2a2f352d6c115e764f540f74fe4a97ea72297e",
+    "segment_index/southnorth__jiangyan_zati__part01.tsv": "5e6e711e2d350cba21188c2cb59fa8652403ffab267dbca65abc8d3e73296268",
+    "segment_index/southnorth__lujue_yushenyue__part01.tsv": "79789a12db9655491893626cea81492ddd8e84a9bcd4e7c458828519d50d5e1d",
+    "segment_index/southnorth__peiziye_diaochong__part01.tsv": "7e21966170de8b806f548298e450d18bba91c25a7c4d2cc4323ef2f9579dda32",
+    "segment_index/southnorth__shenyue_baoliuyao__part01.tsv": "1836509ef8f75ab29226dee4d61fc69809fa308355fc6213a5f4314322fcd3a4",
+    "segment_index/southnorth__shenyue_baowangjun__part01.tsv": "b7f66f048b2acfe324fc8b834cbdb7652badbff30ebf95a677336ada0e20bbbf",
+    "segment_index/southnorth__shenyue_daleai__part01.tsv": "3556c7d3e9d53866eef5fa59a712371f241db01487a552ce451b7b7e1ed0a339",
+    "segment_index/southnorth__shenyue_daluejue__part01.tsv": "9bdf14b6cde920ac242fa26df4ead07f71c34da9e3c0eeed8ee79036eb8bbe36",
+    "segment_index/southnorth__shenyue_xielingyunlun__part01.tsv": "103f03af13836ce0abfbeb502c3ce6cde01694ebabfd794d71f2f2e9462f7f71",
+    "segment_index/southnorth__shenyue_yufanshuzeng__part01.tsv": "ce0b2e3471354336b585e3a6a84cd20211f2374b8fc1a724e17ff1a5839fe1b7",
+    "segment_index/southnorth__xiaoyi_neidianxu__part01.tsv": "616a6af3dd44d0402b831d1d3322021f56b17cb168a805487094988740f61e5c",
+    "segment_index/southnorth__xiaozixian_wenxue__part01.tsv": "3a429bfd7cf4421ef5e2b273800a60e919784d5c11630b2b593a288e87ef1ec2",
+    "segment_index/southnorth__xielingyun_yezhongxu__part01.tsv": "8afb9468e5c49962b8e37d00f1980d4e8057c9c0c2356382508a655f9dbe4596",
+    "segment_index/weijin__caopi_lunwen__part01.tsv": "c30b03c8280d593471e24fe77b5452a13f20d9271a09412a2685aaf7da4493a9",
+    "segment_index/weijin__caopi_wuzhi__part01.tsv": "f0ca5af641b99f7ba3519ed49f5b5f58c72f3f6ef8ac42b61bab45707e158af2",
+    "segment_index/weijin__caozhi_qianlu__part01.tsv": "de4cab674e4d0ca7cd100085990e80b63f80310f16e88147a1690577de8f4eb4",
+    "segment_index/weijin__caozhi_qiqi__part01.tsv": "36798283d7a51d8b8bcadce3749f3544ca4fb6d97ce031dda1d8277b1690d996",
+    "segment_index/weijin__caozhi_yang__part01.tsv": "6859531aa8ab7a115644d28ec29f52dc045d4e49981cd582ed4ce614ba824aba",
+    "segment_index/weijin__chenlin_donge__part01.tsv": "d36721d7295a3e3f45b6447695ee2e08c9cefefd1f621882797a8fc00c4aa8bb",
+    "segment_index/weijin__fuxuan_lianzhu__part01.tsv": "05309d5f1333f1b77897b8d94bd9053c899981268b037d10dfde792f03ffb795",
+    "segment_index/weijin__fuxuan_qimo__part01.tsv": "679fa35e20f4d153e3ec3c44c8841d1dcf8e1ae0361a293978133b9efda47f18",
+    "segment_index/weijin__fuxuan_sichou__part01.tsv": "12ebfd64d8c30c07b506538f9011ec2ccbf72a90150056c4a37197a11d61a69a",
+    "segment_index/weijin__gehong_文行__part01.tsv": "bb27c91bfcc01d54a2128bc8b4f0719685cdd43bf045864f2799a0bc81c13779",
+    "segment_index/weijin__gehong_辭義__part01.tsv": "bb7b31936364de9e3bf2398af9db55d6da2d5fd2ff55365160b7ce754770863a",
+    "segment_index/weijin__gehong_鈞世__part01.tsv": "421ec74e2042a9871663ea3d0c7303e9f57218a19688db06f12db10934a7e72d",
+    "segment_index/weijin__huangfu_sandu__part01.tsv": "719769258bf8d6cc0ee3229dc6bf2dad90bfa378d60902e4217afc0bd81055c9",
+    "segment_index/weijin__lichong_hanlin__part01.tsv": "03fa916e021642e5c152101ab84bea14699b2b9cd980fc68c199e38625612c73",
+    "segment_index/weijin__lichong_hanlin__part02.tsv": "7cb107915a174d0b905701ce52d06f7c6b69ab36f0bc41c7063bea36f40b43a1",
+    "segment_index/weijin__lichong_hanlin__part03.tsv": "e19596b0eb8afec407bb1427e5bb2c75057c564b457fa07a008d0653c86382e0",
+    "segment_index/weijin__lichong_hanlin__part04.tsv": "39bb851b0d20417662e7150f7941b19085d24193173b0465b9601414ca2548ca",
+    "segment_index/weijin__lichong_hanlin__part05.tsv": "73757a21725d5ade7d84017476f643f685d12131cd3c1bf184bb39f6c4e01fbf",
+    "segment_index/weijin__lichong_hanlin__part06.tsv": "0c030cb5f228d03b408fb7441fe0208bc568ab9750058bf5465ed1cce12a6002",
+    "segment_index/weijin__lichong_hanlin__part07.tsv": "d97790dbc3e23fd9cafdb37bedb5adf878a6d6a5814ea3d95cbb4f8252118f80",
+    "segment_index/weijin__lichong_hanlin__part08.tsv": "52312e3cd0add60272853926b4c507da2b832943f1c35aea7e37866e33f2b852",
+    "segment_index/weijin__luji_wenfu__part01.tsv": "6c0c5940b939552cac66458e54b9d02f6ec87257ee84139fa683080938dad79f",
+    "segment_index/weijin__luyun_pingyuan_03__part01.tsv": "cb5234b56f67327611d57aa4dd9d3575deb9ed15b078de3a220991d37f600e37",
+    "segment_index/weijin__luyun_pingyuan_04__part01.tsv": "33e241a4cc471cb357b562ea34a0a02841accaa5fd189d517566cb921b293974",
+    "segment_index/weijin__luyun_pingyuan_05__part01.tsv": "e07645bd1aca713364e0477c527a15c429ab64714d53fba750ebd29a3b5154fa",
+    "segment_index/weijin__luyun_pingyuan_06__part01.tsv": "dcdda6b26d66ca57cc5e0fc59cec2dbfd8ab24de0eb471bf4e80086b13230cbb",
+    "segment_index/weijin__luyun_pingyuan_07__part01.tsv": "46b9e77c18a3215359dbb0521b085cc5eac34d4dd188bec5840a575e72514aa2",
+    "segment_index/weijin__luyun_pingyuan_09__part01.tsv": "66d1b36be5cb893bd1a964216f0ac8abce1f55339b3f829faf75663e703c2d23",
+    "segment_index/weijin__luyun_pingyuan_10__part01.tsv": "578aec4cd8951a39779b7062d9fd1c28e9abb8dbf709b5be08c2edd0dd018c13",
+    "segment_index/weijin__luyun_pingyuan_11__part01.tsv": "12c39edfc139f4e54e80a0afe8e025c1374e1a457d1c28cdfe324efba9055e26",
+    "segment_index/weijin__luyun_pingyuan_12__part01.tsv": "e0e6b508108676041175f32ce469d94a289e377a62f28ab5198f7dcc5f4639c3",
+    "segment_index/weijin__luyun_pingyuan_13__part01.tsv": "b1f5a3fc2c06f2bc6f991dfe9b0adad8822a6daddd853b408f15a3e4074ad3c3",
+    "segment_index/weijin__luyun_pingyuan_14__part01.tsv": "849d7739f4a22d40514c4ac757f6f497f874faa1263c46d671f3bf3357075510",
+    "segment_index/weijin__luyun_pingyuan_15__part01.tsv": "8197233f00c62c81d4f1aaf245e3146084b9b9667ebb596ea2fcb6b4eaecd774",
+    "segment_index/weijin__luyun_pingyuan_16__part01.tsv": "7e22f35e132b8e335ed6a06f629454ac4018fc214e767886cdc42a4b67fddb19",
+    "segment_index/weijin__luyun_pingyuan_17__part01.tsv": "c210352325204380e7fbd02d96e5481bca2050ff301284f79e95b4533a1da69c",
+    "segment_index/weijin__luyun_pingyuan_18__part01.tsv": "57920220f307bc4e5127efaf6add062cff2b2eb84cf25f748bd5bff7f6854923",
+    "segment_index/weijin__luyun_pingyuan_19__part01.tsv": "3ff4c170b5a22074953d8ab394ddf771b4f7f9649a8f422d281584cb60e627cd",
+    "segment_index/weijin__luyun_pingyuan_20__part01.tsv": "37d42fa13376ce91fd9aa382f02532ca1151bf09b1b0ca2341e3f1554f0fbad2",
+    "segment_index/weijin__luyun_pingyuan_21__part01.tsv": "0f5dea1de8464c994f3c07d45287f5575bbcc2f995fffc46f3a3e615ec201a67",
+    "segment_index/weijin__luyun_pingyuan_22__part01.tsv": "8a9437749d3e17eff23961533082deda9a58ba8cfb497f74ceaf3eb4038cc8c5",
+    "segment_index/weijin__luyun_pingyuan_25__part01.tsv": "e028135020b7b51f7d5137d8f5a0c792d8f2e8dcfe48945b5efd0a4e91c14017",
+    "segment_index/weijin__luyun_pingyuan_26__part01.tsv": "c1a2591d6a15c9bc785fda4f142fc42450d3decdbe3f0a20e93f7a8e083941f5",
+    "segment_index/weijin__luyun_pingyuan_27__part01.tsv": "b404925a91e569f6d2c1048334f2eb24f19af73b14907452d2b6610d0fb61e48",
+    "segment_index/weijin__luyun_pingyuan_29__part01.tsv": "845982e4d5f3640926f13aa0ba0d20f57a79a88370213ca13e2d0f60ef9de624",
+    "segment_index/weijin__luyun_pingyuan_31__part01.tsv": "eacac40fd3992eea4b55fcf959cc5643eadbc85cc2c69f47f060216e4fdaf4f8",
+    "segment_index/weijin__luyun_pingyuan_32__part01.tsv": "58adf3e3c4eb45340086d6f53f6f60055cd1c944af2049cab2fbeaa9d62ea519",
+    "segment_index/weijin__luyun_pingyuan_34__part01.tsv": "5c0cde18c3764eebea5872f8e634ae68c8a2f0aabf91b632830c609a06cb6a90",
+    "segment_index/weijin__luyun_pingyuan_35__part01.tsv": "73a126f8c750f82b4d2c77a420143ef96c80bf26a63e54c1fa6bbf6205cbc786",
+    "segment_index/weijin__yangxiu_lin__part01.tsv": "fed5cfd7ffaeb078b484fd2772c882111b45e99703de977589ad7d4f062d55bf",
+    "segment_index/weijin__zhiyu_liubie__part01.tsv": "b9c7a232af0836309c20d1ed819bc7a8e3a9c82f1dfbfc951e14e06539969616",
+    "segment_index/weijin__zhiyu_liubie__part02.tsv": "7fbde75942797c0f3832b5b6bb8badde14d05c85e7642bab4e2afdb59911a31e",
+    "segment_index/weijin__zhiyu_liubie__part03.tsv": "295a4d720d8f40f1effdd9061dfc994067c8e20d3b7082cff3e6bb48f16598b9",
+    "segment_index/weijin__zhiyu_liubie__part04.tsv": "4477d4f8a71283c0a4f95d656c250bb7e1f2016d092cbbff077866a301e35f3f",
+    "segment_index/weijin__zhiyu_liubie__part05.tsv": "e5bb7f6ab6128c101887b7c29c456f7e8285e12fbf68da0bda0dc6f24b4fff83",
+    "segment_index/weijin__zhiyu_liubie__part06.tsv": "06a9cc02fd2ec9e0340d20ab4a21135d72a1db426e690f2753a951270bb1eced",
+    "segment_index/weijin__zhiyu_liubie__part07.tsv": "4cf9e48e2c208d1f899b60cc80c388c8775eb5f64e0e8aebb1003de61e215671",
+    "segment_index/weijin__zhiyu_liubie__part08.tsv": "7496b1c41ee5725e670f4e7b9a0e89b81aa7c57f48f23cbc9a944b87e23730d1",
+    "segment_index/weijin__zhiyu_liubie__part09.tsv": "6eb5b3812856bea0660f2da764ce5dacd9dfa57819bf6e9943a9baf721093aa9",
+    "segment_index/weijin__zhiyu_liubie__part10.tsv": "e19596b0eb8afec407bb1427e5bb2c75057c564b457fa07a008d0653c86382e0",
+    "segment_index/weijin__zhiyu_liubie__part11.tsv": "e68a7ef2790bb699399f7e66dd5b7e321a7fb3b947dec08a876d38635597528e",
+    "segment_index/weijin__zuosi_sandu__part01.tsv": "543d58afbe9d510efecdc0bc84403befb3291f467018d70de1d47ddf21d2f69e",
+    "simplified/liuxie_shipin__liuxie_01__part01.txt": "91fd23a8e48c5ab2661f11809fb74de60f51d0779bf8b43ada28e29d91643804",
+    "simplified/liuxie_shipin__liuxie_02__part01.txt": "c7ec6b6e1d00893f2b8e11da317adfc4808586ed98cd56bc135a0770677c5342",
+    "simplified/liuxie_shipin__liuxie_03__part01.txt": "812c3db3765c8bf85f0c8bbf79410a4f31e99815718c8a3ebb5c1db43160b383",
+    "simplified/liuxie_shipin__liuxie_04__part01.txt": "7e892390f2614663d2633c8702e9b682be11308e899c9431de3eb23e90a6587e",
+    "simplified/liuxie_shipin__liuxie_05__part01.txt": "fff04a5e010a65728e06be943395e74ec9e7090f364b10a72991326320372cec",
+    "simplified/liuxie_shipin__liuxie_06__part01.txt": "d681e0c30b5301998ba1bd25e99f67b1826f64216f4345fc156da3000508b032",
+    "simplified/liuxie_shipin__liuxie_07__part01.txt": "04557216730f4cd8f625b7e06853baeb9471c0de010d757e21c909423d14e7b8",
+    "simplified/liuxie_shipin__liuxie_08__part01.txt": "c5cc475fb60281497e043e334dd24dbef1929da02b8954807c824903b116804b",
+    "simplified/liuxie_shipin__liuxie_09__part01.txt": "14764b7bfb048950950b6e238c5bb2a46a01d3088918d5090f21d477a852c984",
+    "simplified/liuxie_shipin__liuxie_10__part01.txt": "8eb8148128b50543cdce7242bfab992f78d78d5f0f9fa563135671b3d4d909e7",
+    "simplified/liuxie_shipin__liuxie_11__part01.txt": "e4843be6cf382a63e5503c618880734ee609930b99248aa336536388e3b7c551",
+    "simplified/liuxie_shipin__liuxie_12__part01.txt": "74fe3d79d17e3adba684e23e695e6f31f92471ea3ff8c5a2e110351e1d287435",
+    "simplified/liuxie_shipin__liuxie_13__part01.txt": "cf25afdae3b1661c63c6c30f8721b59aa03d5d5c0eb62b41014570e8b4682b9f",
+    "simplified/liuxie_shipin__liuxie_14__part01.txt": "dd929689b1f4d56d506d8feca43c13b415dde347efaae1596e0d50261c603da9",
+    "simplified/liuxie_shipin__liuxie_15__part01.txt": "bcf3fd4cd26bcebd00b49d848ca9bb9c0da617380ab90f48d3d17030bfcf07fb",
+    "simplified/liuxie_shipin__liuxie_16__part01.txt": "71aca3e330625468a6f97298151916191f29c06f8af1d605a9b54df4dca2129d",
+    "simplified/liuxie_shipin__liuxie_17__part01.txt": "43dc8f395ff21ebec8ec0804d35d9a38b3096638903643e068a9beed540bb37e",
+    "simplified/liuxie_shipin__liuxie_18__part01.txt": "566b201d5ef920ea77a80c8d5a86cbd8f5b0717998578745e84176426e23d62f",
+    "simplified/liuxie_shipin__liuxie_19__part01.txt": "1248b311994c376029716fe4464cddff7e6742fe5098bbd91e79d3817fd44bc7",
+    "simplified/liuxie_shipin__liuxie_20__part01.txt": "6847f270eac5abee57515cec6d901eec5d9d5a6b65ba33770560b91ea9509148",
+    "simplified/liuxie_shipin__liuxie_21__part01.txt": "5deb5f4e8c84e8e1c792702381243c3c0b9692e17c958befafb4b9b31acf1034",
+    "simplified/liuxie_shipin__liuxie_22__part01.txt": "9aedc87825585b89224a66f41788d1fc15af2331f3a28aa61408eeb22d235068",
+    "simplified/liuxie_shipin__liuxie_23__part01.txt": "46b794c52755db766283063483e2b57650c1117235325dab9d92c6ab301e15db",
+    "simplified/liuxie_shipin__liuxie_24__part01.txt": "479f32a12d028d16973194a1563566c4a197ef32f6029ecf9c689a62bc8680b5",
+    "simplified/liuxie_shipin__liuxie_25__part01.txt": "a1f353e9dc023bd0b88fe11952ae545efab3d961f19b4be1fddbe625672e253d",
+    "simplified/liuxie_shipin__liuxie_26__part01.txt": "21bff18b986de9bf05f3728123f378297b1ae9b9324bd1d09fec35853bc3d653",
+    "simplified/liuxie_shipin__liuxie_27__part01.txt": "a92cdf9db4c8179f8d211f9932578d96606e769d9d28df1d5e1b3b9fb8cb5779",
+    "simplified/liuxie_shipin__liuxie_28__part01.txt": "26c9a3aff2986c6a4671c6377aee02f426f1737cc18b1725858cda67672186cc",
+    "simplified/liuxie_shipin__liuxie_29__part01.txt": "36df30bafb9c9fe102dafca6e2f658d8cf1c7c7fb29a5270d2f02cf69417d670",
+    "simplified/liuxie_shipin__liuxie_30__part01.txt": "6a4241bb387e161874d64811e0539dae5a54a7cec0ed206482a9bf7667d78abb",
+    "simplified/liuxie_shipin__liuxie_31__part01.txt": "800c6d722dc1e6be97ba1b7dd2b2d8b67a7bfc33f26337a52156773724748e9d",
+    "simplified/liuxie_shipin__liuxie_32__part01.txt": "b20785af8e4397a943192adc075b321abd2f2baad4b60d20615f1fd324aa6887",
+    "simplified/liuxie_shipin__liuxie_33__part01.txt": "e036b826ae4d09f89a49591c551caa70953734c766f07872db2317cbb5afeee7",
+    "simplified/liuxie_shipin__liuxie_34__part01.txt": "b0d08b07dd5fcb1dc113b6bb47498485f3a0214cbd9d0d686c7f946e13cc6cda",
+    "simplified/liuxie_shipin__liuxie_35__part01.txt": "dfcc9f5af302431350d8bf71350dd911d6eca66cc59052d4f2ee454aeeb831d7",
+    "simplified/liuxie_shipin__liuxie_36__part01.txt": "21bda87277ef9793719a5762709788204742ff5dce6c4f025c5c481d00ad22c1",
+    "simplified/liuxie_shipin__liuxie_37__part01.txt": "f807b88089c6863052cd1f8386de23bab9b367867b71f5c7a9858ebfb2c8769f",
+    "simplified/liuxie_shipin__liuxie_38__part01.txt": "ec9033bf78179fb2e8d1728a84a58ab8302a87c4164b984a3f0694022044b162",
+    "simplified/liuxie_shipin__liuxie_39__part01.txt": "c56da943e5e4123d8d890e07f042b480c206f2020d97b07575df1de059ed754a",
+    "simplified/liuxie_shipin__liuxie_40__part01.txt": "ad4f989e619b06860ffc64e203a3ca5fcdbaace56b6e9fd92d93d6757ea2ba12",
+    "simplified/liuxie_shipin__liuxie_41__part01.txt": "f10c53357a747990030fbb2b5699c4378e65cd5919955c868ec5ae42e41e9ff1",
+    "simplified/liuxie_shipin__liuxie_42__part01.txt": "15da9369413968729a640cc4d627c977ef1a226f93fdb5943349d2b694a04d22",
+    "simplified/liuxie_shipin__liuxie_43__part01.txt": "c8dbaf392924cda374fde73cd0d5fa1968cc9cb903020e0e5cdee4cc2faddc9c",
+    "simplified/liuxie_shipin__liuxie_44__part01.txt": "3e3d3ec1a738d7aa0ae1d55b513b1c26fd638c672e9aa851a1ec363987220d31",
+    "simplified/liuxie_shipin__liuxie_45__part01.txt": "74efdcac72c07d38377fe1e5ad41d77eb7d3d0b4b688524992a90703468cc249",
+    "simplified/liuxie_shipin__liuxie_46__part01.txt": "55a2f20859b7380543e4ada2e8ce1ac346091c75dae229a5dbe1d7a90b8845b3",
+    "simplified/liuxie_shipin__liuxie_47__part01.txt": "605b7eeeb6c829e3c59e2d22a8b6e5ec5cdf7ba3638bfeebc09a7a36a40716aa",
+    "simplified/liuxie_shipin__liuxie_48__part01.txt": "f294434fa070480b5437b5790d67aaf3c6b80a8b8a75066b82607f488c43bb90",
+    "simplified/liuxie_shipin__liuxie_49__part01.txt": "45046bf0f38275b0f653319b3840f7db4c622364ef68dc6a8b547b8b23583c99",
+    "simplified/liuxie_shipin__liuxie_50__part01.txt": "97570b85407cac20bf08533562c38d0413749da9f35a8545ec7751fa6661c774",
+    "simplified/liuxie_shipin__shipin_01__part01.txt": "a2f6fee085cd42dc0777caa89e6b626c1e6041b689ec2d2653d5de64d0450d98",
+    "simplified/liuxie_shipin__shipin_02__part01.txt": "108706ec6372734278fe73e693de26cdb9ae9b6d2fe79ac7b45431c27a1f7b83",
+    "simplified/liuxie_shipin__shipin_03__part01.txt": "615415a04b7151e09e3ef6a76837655b8da62bbb965900bdfd4eda36a9e25d34",
+    "simplified/liuxie_shipin__shipin_04__part01.txt": "2296f169f2198ae794fdbdfc7400b1b9dd00a026424aa2ce1ae1d1523f544073",
+    "simplified/southnorth__jiangyan_zati__part01.txt": "f5bd21a1c0859f176b8d0140632477988c71bdc2c0b49a25b93664cf1b9b857b",
+    "simplified/southnorth__lujue_yushenyue__part01.txt": "fb7263efd9c5d5b7915ff03dfebc95fab18ac530a9d2bf4c1e5f12aab358524a",
+    "simplified/southnorth__peiziye_diaochong__part01.txt": "b0f28a308452bcebf7c71ca748cfe8d1ad4eaf15de75e5598790958f5184db0e",
+    "simplified/southnorth__shenyue_baoliuyao__part01.txt": "48f2232a3abf91a8b72617b01395170fa756507c1417e7ff70b6a52b2e087b9d",
+    "simplified/southnorth__shenyue_baowangjun__part01.txt": "07e7866ec82ebe4a4f6f5886a2bc0997c40dc47445d5940355f0b7cca2098922",
+    "simplified/southnorth__shenyue_daleai__part01.txt": "4cc765ee5ae1bcd31ec720904552ba3d4f931219877b67643a0d7e78f7ddd744",
+    "simplified/southnorth__shenyue_daluejue__part01.txt": "de12324ab1b9b010344293d60647c5359ce65edb33096028b5064081f94e04a8",
+    "simplified/southnorth__shenyue_xielingyunlun__part01.txt": "6c7e38517973636ef9d4e054c71808ead9d2d4dbcf84de06532e8eb628e96e53",
+    "simplified/southnorth__shenyue_yufanshuzeng__part01.txt": "87ca95c967273815c61b7b9cd56746c9ed3fffe723a295904d39e2674c00fc37",
+    "simplified/southnorth__xiaoyi_neidianxu__part01.txt": "0f0cebaec9db5e9cd9ec67b2c10d9a3306df53559e0d916737ac211542d59196",
+    "simplified/southnorth__xiaozixian_wenxue__part01.txt": "fb343cf56f42936354423b154229ef88a5de317b73dbba36e0e7ae0ef595b1d6",
+    "simplified/southnorth__xielingyun_yezhongxu__part01.txt": "46a50188160febbef0ec1a5ec429c5198c179ce829eadf1d8f090d0510b44152",
+    "simplified/weijin__caopi_lunwen__part01.txt": "1df6940b6d7ea679ac6f5b6b965055eefb94300a74507a9b6f0c74d707aa6222",
+    "simplified/weijin__caopi_wuzhi__part01.txt": "43a9200ab4945dd01be2778d9ddc842e4f86c3f668897e68a1cb667d4e88558f",
+    "simplified/weijin__caozhi_qianlu__part01.txt": "05a762ca8634fb48c767f3110e475044f526ba8404136811528e81e5e45ae61d",
+    "simplified/weijin__caozhi_qiqi__part01.txt": "fd332323c5d4939d044114a4c5cc95e4ac520b28cf567f354af45b3634f1fa27",
+    "simplified/weijin__caozhi_yang__part01.txt": "b60df93cace7fcfd32fb9d65aab35f13d08c73fa00f7f93d73b1ebb85ded396a",
+    "simplified/weijin__chenlin_donge__part01.txt": "e1b2ffc6e0550026c6be1e12c26e8cf0a20f0a51d4b446034da3e75d1fe00620",
+    "simplified/weijin__fuxuan_lianzhu__part01.txt": "4a2349997882303777990771e71a565bb421c9cde903252ddba2e2d255463757",
+    "simplified/weijin__fuxuan_qimo__part01.txt": "7537e07e8ba53f90d45a40c4f4db9c496d353b9562f50275f1b6ce56081278ea",
+    "simplified/weijin__fuxuan_sichou__part01.txt": "729c665eaf31a38d31cd2f1cbe721633e290cbec70680a2b4314fcd1e6d8f7d9",
+    "simplified/weijin__gehong_文行__part01.txt": "fed816c7f61b17e53311a8b178a3a7953e81c0bcb024ec373c7e2af9c95c027c",
+    "simplified/weijin__gehong_辭義__part01.txt": "0920e2b980ba148ca997727b240e74d74fdd76d0cd6cb0345819a7edeff29828",
+    "simplified/weijin__gehong_鈞世__part01.txt": "6b4a3fe4728f6e7c36d8fa293f4595cb78e81313e81aa6200b8bf543f85507fb",
+    "simplified/weijin__huangfu_sandu__part01.txt": "546754b0ebe8d520f1b92c57ecc6447ce01e56f5419503cd7b426de9cc3b00af",
+    "simplified/weijin__lichong_hanlin__part01.txt": "7a5e3c661ac6a442cc36731222f16ae8ef117480b52ae65f763311d15d02bae8",
+    "simplified/weijin__lichong_hanlin__part02.txt": "a8d34aa6ae8349a1681d7d272bf84fc5886bc7c3a1056aca446adc308584641d",
+    "simplified/weijin__lichong_hanlin__part03.txt": "4554286f637f77309f2f166b2c4fd4b97f6a1a625fd8acef915e5d9e40db6de5",
+    "simplified/weijin__lichong_hanlin__part04.txt": "fb3d8876152be60ad0ef7bfc7dfb1bfdbd27ffad159284a59b35ba2075a2f4ef",
+    "simplified/weijin__lichong_hanlin__part05.txt": "d0d11ed03adc14ccf612b3d536338572695589e515336e79803c6ef8108c83e3",
+    "simplified/weijin__lichong_hanlin__part06.txt": "660d28078cdbdd49077eed082655513256e50aab6cae11e99df2c562fbbc5181",
+    "simplified/weijin__lichong_hanlin__part07.txt": "1df0997ce59b05f28373a84db1012ccd5bee576b5133cd5e1705a576a4c757d4",
+    "simplified/weijin__lichong_hanlin__part08.txt": "78b09dcd56d5f433fc84fcfa79adb54930438f0e458e1eb78c1878ebca95df54",
+    "simplified/weijin__luji_wenfu__part01.txt": "e30420ba3e409e47263af181b806cce35198388029c255d9afbc5af8ca114bd6",
+    "simplified/weijin__luyun_pingyuan_03__part01.txt": "8ae5689792ee0cf13f0197b82916b627576de7336af45902d62fae5ea70b9892",
+    "simplified/weijin__luyun_pingyuan_04__part01.txt": "e0123f854cea19fc22deed3612d33f47cf1f0c833e53df31c0b81c46b0fa33d5",
+    "simplified/weijin__luyun_pingyuan_05__part01.txt": "c2a60e08bea24b36171e30001e5f6ec34322f570d54da01a860ed3be0020d1f9",
+    "simplified/weijin__luyun_pingyuan_06__part01.txt": "aada5571b074ba7c74801a1938ce0300749dc3b7ebce414dbd8bcac966d263cc",
+    "simplified/weijin__luyun_pingyuan_07__part01.txt": "04e0a59e80907a57292f098c6826057ba5a7c4c4b230919522dda8699eb4fe9c",
+    "simplified/weijin__luyun_pingyuan_09__part01.txt": "27a2064ef836f6f4b1418f1a7c50ebcf56d26980de9d1cf348d37109a286105b",
+    "simplified/weijin__luyun_pingyuan_10__part01.txt": "6696e37c17124917f399aae26d50f8453662e30ce9cbca5cf1cbfa765e8f3df1",
+    "simplified/weijin__luyun_pingyuan_11__part01.txt": "61473829dbd2e30e83897e5438dfae8971d44c766792416b9374bcf7d0fd2690",
+    "simplified/weijin__luyun_pingyuan_12__part01.txt": "e2a3f0e2225872719c2acdb477751aef6a5bef98ba43e605f45be3ec27ab9f4c",
+    "simplified/weijin__luyun_pingyuan_13__part01.txt": "9210da1ac78e66f54ce352128499b2956205f5fd6e86fbbd0dbb25efce4c4f0f",
+    "simplified/weijin__luyun_pingyuan_14__part01.txt": "c0393f0fde681ed43cd751be23f5bdbb9e2a442c1e52326cdfef20adf5a3e105",
+    "simplified/weijin__luyun_pingyuan_15__part01.txt": "133e8fc0ed72e29370610a99db4f45dbcb5d532e251ede7196142cf195767f23",
+    "simplified/weijin__luyun_pingyuan_16__part01.txt": "eee1e270e05d76519856b0ab475383d2b6e2d65bdb28a1c69dc7999f35197068",
+    "simplified/weijin__luyun_pingyuan_17__part01.txt": "61f7f95a1ce9d4cd2de7b48bcc60de48ac6cc17bbf2f9e52763fe2544c8629ff",
+    "simplified/weijin__luyun_pingyuan_18__part01.txt": "f11ecc0ed099cd06e0342439f0bf78174e1cb4ef501345452c7f331be1c00390",
+    "simplified/weijin__luyun_pingyuan_19__part01.txt": "1941483bccacbd2848021a0aa59e2d70f00284b1b8fce51ba08a1487f29012cc",
+    "simplified/weijin__luyun_pingyuan_20__part01.txt": "9de7cda4fa7a1c559e85cb111c037aec2ad2b847b491569d6b349e9e40707a2f",
+    "simplified/weijin__luyun_pingyuan_21__part01.txt": "65f9576fc8bc68f4e85d4ae142f711429f7ef06ad0b65a55c863918630008a1a",
+    "simplified/weijin__luyun_pingyuan_22__part01.txt": "233950139e4d09ae96f0828706f5266d97ad10a637349cf3784fb376c31729df",
+    "simplified/weijin__luyun_pingyuan_25__part01.txt": "4f286ac6ac0e53e7433938583d3abec0ff698823ef82777da8f9199623d2c1a2",
+    "simplified/weijin__luyun_pingyuan_26__part01.txt": "b95899df8899273e68e223cd10e417e050f1fb99ce85d5189c93c624cafb2b62",
+    "simplified/weijin__luyun_pingyuan_27__part01.txt": "1736d400afa669c36e814721e007c980adc0cfc09ca37571c6615b576ea89e7d",
+    "simplified/weijin__luyun_pingyuan_29__part01.txt": "a35d291c4e0dac20ddc8f0b8b5851f2a549eaf0a4c2bdc51a0801c2026d68e8f",
+    "simplified/weijin__luyun_pingyuan_31__part01.txt": "39cbbc2aadf073d9c0407fcf133f8376815fd62b90d8f0f19889e44d0cb46ec1",
+    "simplified/weijin__luyun_pingyuan_32__part01.txt": "ec9e0852eed0550b3485670489025d3c55431a02c92bdd29e60b9296e50cb5d8",
+    "simplified/weijin__luyun_pingyuan_34__part01.txt": "e19779a7f553cfdd0580cc8fb11a38f96ab35913b03d5c1c9b2bc1fc52702ec3",
+    "simplified/weijin__luyun_pingyuan_35__part01.txt": "28326f8c83534eee51a537d7d615c0e0aa59dab37ce1e2d8d47b5073140fcc69",
+    "simplified/weijin__yangxiu_lin__part01.txt": "80c6a2de28b1a2097052f32f22037d349e102d94685958a86dadeacf196cb83b",
+    "simplified/weijin__zhiyu_liubie__part01.txt": "3ca7a02067e74e80361efdb3daea4034dfb07d88a67dba6f6ce71a92f5e63b02",
+    "simplified/weijin__zhiyu_liubie__part02.txt": "981b2eea74ccb065fb9064e6fd78fdeec53bdd63564e4231a7a58bb6f45b6e39",
+    "simplified/weijin__zhiyu_liubie__part03.txt": "3ac794ddc98b5dbc9d9a9064bdf9d005b67bbf25aa9d83d4e2f6bb5a7df1c8a4",
+    "simplified/weijin__zhiyu_liubie__part04.txt": "2d21ad8a3eafd6f4d2b1e17cae540f999d0b293e3d046427590a13b0c30ff469",
+    "simplified/weijin__zhiyu_liubie__part05.txt": "b750af1d15e67dd501aa1be0cbced9f8e4d07b86ae34447754ee7b60d5b5bc0c",
+    "simplified/weijin__zhiyu_liubie__part06.txt": "891f6dff0349b9fc86429acc60ee6ed0dfb51a55339e58e94241a5487d99168c",
+    "simplified/weijin__zhiyu_liubie__part07.txt": "2fa1541a0b397847ce00ed34688b798c771f8feb82fa62ba86de4c370353b99c",
+    "simplified/weijin__zhiyu_liubie__part08.txt": "6a4e6cc99aff192065a1695182e5ba165851b1465c9d59fa672f00d38dd55576",
+    "simplified/weijin__zhiyu_liubie__part09.txt": "78c0acb3e13527e9a4cae3751b0ac054bed3f64835e48a7d9bd4e1176891d69c",
+    "simplified/weijin__zhiyu_liubie__part10.txt": "637f008e85d12f2448d41bb663799bb64e0271cf70dabd0b906378684e557ae6",
+    "simplified/weijin__zhiyu_liubie__part11.txt": "3c577590c0a5846386fd953f3e19c926a346314c155bb49278c4a0826accb19c",
+    "simplified/weijin__zuosi_sandu__part01.txt": "1bf15f580771646362ca2c47a82d07422c08458bfb9d7025caa1b94fb767d207",
+    "spans/liuxie_shipin__liuxie_01__part01.tsv": "5b7e217405cfcf9994c08de2efa431b100c80324a2ba7b84b8b73f90a13af031",
+    "spans/liuxie_shipin__liuxie_02__part01.tsv": "fff5e3d5309aa7031b3698b28a058fe123a80c330ec2b3421b0b85534423ba4d",
+    "spans/liuxie_shipin__liuxie_03__part01.tsv": "5306b53643d566545cb859e2fd457979bc15eb3b741dd2f0ce1277978f0485c1",
+    "spans/liuxie_shipin__liuxie_04__part01.tsv": "c78ee0d975855df7b96140b45a2678613c111a2333656cc1fff263f1a23b0c15",
+    "spans/liuxie_shipin__liuxie_05__part01.tsv": "4d7d73486f4ef49e2055303d5234e13a0804fcce4752c50e5b9c97293cdf7753",
+    "spans/liuxie_shipin__liuxie_06__part01.tsv": "776b72e83641b0e7958847a63405ff3d24adabcf15080bbd5371ac37c34314b5",
+    "spans/liuxie_shipin__liuxie_07__part01.tsv": "b1846806cb438d97739ce9c28d16a9948bc3ba4471c6a2102cd68e340d134e69",
+    "spans/liuxie_shipin__liuxie_08__part01.tsv": "a13ffe6b966d75aa7287d6428cec481c4fe9b518e5093334e73df230f321903e",
+    "spans/liuxie_shipin__liuxie_09__part01.tsv": "dd8b641cbc06cebaf2a9b113f9c8a9d4a9d74498731c6ee777eb6da439083c65",
+    "spans/liuxie_shipin__liuxie_10__part01.tsv": "b82ad0d7eb5efccc759e8970fd018656c7018b5b5c50fd958f6e825b40a6a352",
+    "spans/liuxie_shipin__liuxie_11__part01.tsv": "3983e87e0c45197f85e1d20a01bfe97e291a93dff67749ea6f6b62090b3bea29",
+    "spans/liuxie_shipin__liuxie_12__part01.tsv": "db7bb190b0e904d01209d8e5bf0e219cb0b21d7ec3f1c5baf0bb66943b27254c",
+    "spans/liuxie_shipin__liuxie_13__part01.tsv": "4fb74cc15ca22d258399826be8f9125881a5ba0f7b3ec4fe2263c4208e61939a",
+    "spans/liuxie_shipin__liuxie_14__part01.tsv": "5caced04b56b815779fd8cec83732a4d8a08ee07c6ed33c6a811748f54c3f153",
+    "spans/liuxie_shipin__liuxie_15__part01.tsv": "13a1f53f7725901b03f9b8be276f9f069a0c3653b6a49ec292a6af9d87503d7d",
+    "spans/liuxie_shipin__liuxie_16__part01.tsv": "4f6e039c1b0d630837c8ea865d588b9570d0655a2a0faa843a1450092b0c9fc5",
+    "spans/liuxie_shipin__liuxie_17__part01.tsv": "2fe5e88f9e9c205e5886a4ce7b0d19e0f945ffc5d9701a9383e45d9ce21bb930",
+    "spans/liuxie_shipin__liuxie_18__part01.tsv": "33afeffc8a99dc49dedc33f62cd79cd576ba8246136c2f8bd1aa9df7816e90eb",
+    "spans/liuxie_shipin__liuxie_19__part01.tsv": "8b24165d7982463cca0ce64bda514942f3cd431da1c19a3ce8ed446463989ff6",
+    "spans/liuxie_shipin__liuxie_20__part01.tsv": "38703b838b6d7c460856c32c4f2d3a5856198c0f3041cee0593142c067779fcd",
+    "spans/liuxie_shipin__liuxie_21__part01.tsv": "5a4c739c46659343827f663828fa892cee046579588ba76ce064673215c2d0b0",
+    "spans/liuxie_shipin__liuxie_22__part01.tsv": "7ddd63f0c229e91837c342c571de4847fb1008a4eef6f30b6d53cde9680cea5b",
+    "spans/liuxie_shipin__liuxie_23__part01.tsv": "feb2243d63f28da0a1aa0d2f12fe9404603a720ada946cb531facd2d1ccf89e5",
+    "spans/liuxie_shipin__liuxie_24__part01.tsv": "a6b85f94577aebf0ad659f3cf7732e0bc0b1bacdfb25757186de5a11e8b2e324",
+    "spans/liuxie_shipin__liuxie_25__part01.tsv": "241124c9375541c758d2b806101879ca92f19365e297ccce0b47d57364262ae8",
+    "spans/liuxie_shipin__liuxie_26__part01.tsv": "f4707ca0b561c1269e295117717a9971460a61fa2c43943f1aca9648d120928b",
+    "spans/liuxie_shipin__liuxie_27__part01.tsv": "f4d61c4ac791b903ebc6547964e35529a8eb273c3bada4ade81ce5886396b6e7",
+    "spans/liuxie_shipin__liuxie_28__part01.tsv": "df41c26aefc81cecd612b871c139cd5109f8eb8ad9d91b2f7b393a4f1e41b7cb",
+    "spans/liuxie_shipin__liuxie_29__part01.tsv": "5974d5fc974353bc48a7fa43d9774a16e100df99d4b5b0b582441518171e7b1b",
+    "spans/liuxie_shipin__liuxie_30__part01.tsv": "e0147eeed697b39fdfe0209a408b7645d0de68d2c32575c89d6599785b82b14e",
+    "spans/liuxie_shipin__liuxie_31__part01.tsv": "5e8326490c84cd3f5753748b0aa96a4e37b18dff6508b9a3b5b33ed664dfba9c",
+    "spans/liuxie_shipin__liuxie_32__part01.tsv": "792890983f5d47682fa4f11516506a8c94335133747f79a421ab3a541ab133ca",
+    "spans/liuxie_shipin__liuxie_33__part01.tsv": "f2b3ce7ed93972f02290bd85da477e44bb57c7f37879f5260b5010c6232f969c",
+    "spans/liuxie_shipin__liuxie_34__part01.tsv": "a521aef39b5bf5abf6de62c6c67fe134612f3d01d0000a972dd4b395b7056050",
+    "spans/liuxie_shipin__liuxie_35__part01.tsv": "bc0d78a2981081749398fd623b182d6bd53c79d1e6eb9a4f93f8ee6aaa512b36",
+    "spans/liuxie_shipin__liuxie_36__part01.tsv": "1080af64023c342ac5bc57f9b4969e2d6156c4e131475471730a04e78da4a748",
+    "spans/liuxie_shipin__liuxie_37__part01.tsv": "c076d4219ea68443063d428fccfc265e5739d818a041f29683b947c4e809ab6e",
+    "spans/liuxie_shipin__liuxie_38__part01.tsv": "849450ff26d2402af43c366d4682089744b1bbcf65ebc36e19b9914b6519ade0",
+    "spans/liuxie_shipin__liuxie_39__part01.tsv": "bc2bedf9053907e079af0c8e39a89cd11293c43feaa7f55af428357385ae960d",
+    "spans/liuxie_shipin__liuxie_40__part01.tsv": "debfd8d7e8b4ed0f35c3b2a08b25bd94c5781d7fa978a313786075ee6924ccdd",
+    "spans/liuxie_shipin__liuxie_41__part01.tsv": "93157b290b81d4a577ab6f6f99beabf86945d54e983a838ac405898e1cfc6071",
+    "spans/liuxie_shipin__liuxie_42__part01.tsv": "e737f37c06f60838d9660cc03bced6b443d7e8ab1cd2c62cc4a09300a5417f71",
+    "spans/liuxie_shipin__liuxie_43__part01.tsv": "f807cac4d309dcdcad31b77922237e53231963c3d5dbbe60b3302110f36b42b1",
+    "spans/liuxie_shipin__liuxie_44__part01.tsv": "2e216a78a4fa67fb861491e7e6f788164d25dcc3c4ae0f1575e098661a483bf1",
+    "spans/liuxie_shipin__liuxie_45__part01.tsv": "6094a41537e9a93ddef1923cdf7dffbe11452201efb73df80614f18b17d8308f",
+    "spans/liuxie_shipin__liuxie_46__part01.tsv": "56880da9260506b838cf6513a04753f6dcc1c6917c782e87aeb7a25a2ad35a46",
+    "spans/liuxie_shipin__liuxie_47__part01.tsv": "880a294bb7a148d26c6717824c4816b478e8bf74ec25b43df47327c39ba8a864",
+    "spans/liuxie_shipin__liuxie_48__part01.tsv": "6d3c860c12dff296f79a8c3e7bfe5fa4f38f16d4bd53fed4a3e0568778102250",
+    "spans/liuxie_shipin__liuxie_49__part01.tsv": "bfdb5eacc1fbeff52f24409dbfa754d79653b3701975954014d48c84f91096dd",
+    "spans/liuxie_shipin__liuxie_50__part01.tsv": "7988bf370f679ae9d343620e2045a485d8e4d2a864ec36868d8d7c83d7a8dbad",
+    "spans/liuxie_shipin__shipin_01__part01.tsv": "14c1c7fda5c47b51acf7e02db1f043dd4e075fb2829315628767c42b12eca0bc",
+    "spans/liuxie_shipin__shipin_02__part01.tsv": "596b8a69d5f39ff7b8fb0d91079871aee4d567693581598bb68ae75618f4ea8f",
+    "spans/liuxie_shipin__shipin_03__part01.tsv": "4b4834856843cd447973d7806114d604a7ada3b12aa034edbd6159301f222c00",
+    "spans/liuxie_shipin__shipin_04__part01.tsv": "e15f7d66d4270f66696b5fef461db4f9a3a42b08dd20631f38d75a07764db9f7",
+    "spans/southnorth__jiangyan_zati__part01.tsv": "18ba564f1faa9aa02415a44038be857ffb8260dc97b2a48d8a676986574a028e",
+    "spans/southnorth__lujue_yushenyue__part01.tsv": "9065054acf299a43f1732f487530c2fdc8c673237624baf5c20f6736cd2520ef",
+    "spans/southnorth__peiziye_diaochong__part01.tsv": "89dff571029c1846815de423ae31aa91de3d158f9e8c2f3d890912751bba80e6",
+    "spans/southnorth__shenyue_baoliuyao__part01.tsv": "8a498e92106d8da065946362d8375ed54bdfb1b5b6334d81422d64c6a5db32f4",
+    "spans/southnorth__shenyue_baowangjun__part01.tsv": "d112624b7cd45d9a0092e0b2ce078a135bd854cbfb4528c9b3df96b382119f76",
+    "spans/southnorth__shenyue_daleai__part01.tsv": "a07bad5e4f5e18d77be525d890596cdb168cf580936f0d33fc35c7e6dcaf6c31",
+    "spans/southnorth__shenyue_daluejue__part01.tsv": "c79f089146edf2aff92f9fb3069eb926b1914a9b659852e7e5f61247ce1029d4",
+    "spans/southnorth__shenyue_xielingyunlun__part01.tsv": "049e964f53bbca832d3ac84e5b18bf9d00f6f6bba67e200467069127c690a7c8",
+    "spans/southnorth__shenyue_yufanshuzeng__part01.tsv": "50ceb5a74f8cc09390bec8d1fea45f0d49b9bd209c106b102af6ebb7c1865c0a",
+    "spans/southnorth__xiaoyi_neidianxu__part01.tsv": "b1b8c0c428e80ad11d4711510d3d8d43bce5a0c0d21c0963a60793ab17d66418",
+    "spans/southnorth__xiaozixian_wenxue__part01.tsv": "5988878666a35596903e4e82c6bc039577d6bac15675f9b1010852ddbd9a526d",
+    "spans/southnorth__xielingyun_yezhongxu__part01.tsv": "6151f381a7bd3185e58f46cea3572936c6bc30386a89c6505fb6a30fb0d0106a",
+    "spans/weijin__caopi_lunwen__part01.tsv": "b567ba7bfaee9fa165b0ce0eb3b38bffd40cab313f9525516736bbc1b15317f1",
+    "spans/weijin__caopi_wuzhi__part01.tsv": "d29277c36e8813dfd0fb937805caec352db79154e947d577c12ad038197c0c1b",
+    "spans/weijin__caozhi_qianlu__part01.tsv": "22a712be337912c0ff65dee1398b06058d7d653604efd69283da9f8fd6694563",
+    "spans/weijin__caozhi_qiqi__part01.tsv": "d72ba09d59bebaa52f44b010eba406296588fdba8fdda980ece84f767a8df96d",
+    "spans/weijin__caozhi_yang__part01.tsv": "20863aa4b4a85debd8378dcea7766bd5cc4ef11907d90d14457bf5ddd468e74e",
+    "spans/weijin__chenlin_donge__part01.tsv": "bee4990a49e4c143fed534f35b45aee12ec07920e98f11bfcbd00bd199f0a6cd",
+    "spans/weijin__fuxuan_lianzhu__part01.tsv": "5af18d29a8363f451b451f2f6901f298d64b97d16fa65ce8c404fd7add9b9993",
+    "spans/weijin__fuxuan_qimo__part01.tsv": "9a22a240beeb15b9039e0999b9c758c977f916237a086b95377746c009e1c13d",
+    "spans/weijin__fuxuan_sichou__part01.tsv": "fbaec083823e2a4df1ed7ff68a8a48a5d348bee0906cbba099ac509635417554",
+    "spans/weijin__gehong_文行__part01.tsv": "8ddcb2558826290eb36094f4dafcc570316569f785a41beb838bd3dc90b510ed",
+    "spans/weijin__gehong_辭義__part01.tsv": "ab7ea97de4b79788d0daba46447b1f5c60ea6fc948afb98fcf7a4e6083713b42",
+    "spans/weijin__gehong_鈞世__part01.tsv": "20dc99fd37ac238d3ac8ccb91564d6af26607bcd9acf0829023bbf21073950d4",
+    "spans/weijin__huangfu_sandu__part01.tsv": "444c856bd93908ac4271d9cc891afa630e3af645d2ccbd2161acfa59ae0b8055",
+    "spans/weijin__lichong_hanlin__part01.tsv": "a3359e1c4508d5ade8266f65124fd5e52505e1f042c31b9568d640bc4715f15b",
+    "spans/weijin__lichong_hanlin__part02.tsv": "3c792d5d7404859d047caf832c053d45d8268d9506147fdafdb8dcc3d4e076c9",
+    "spans/weijin__lichong_hanlin__part03.tsv": "f8ea0886eaa4f446e5bf5b7e12c12064c0ee96e99b22c29f0cf8dc9c5ddc540d",
+    "spans/weijin__lichong_hanlin__part04.tsv": "7c7c20a0564004572b6d56819b72f0acf294eb1617caf51f0e690c699dd4e338",
+    "spans/weijin__lichong_hanlin__part05.tsv": "513e9117fc5953e1b6f9e15e7b560d2da5c8074c93d231f91ed070940628a708",
+    "spans/weijin__lichong_hanlin__part06.tsv": "fd12133a9077a75609e9add5e69671f6287dcb5c200cbf5025f6288eafb49d82",
+    "spans/weijin__lichong_hanlin__part07.tsv": "ee6f76e4d7fc1895c077d160cb5316de547dfbbb37d5c93263a37e342daba803",
+    "spans/weijin__lichong_hanlin__part08.tsv": "7e34529b7a4800690a43c21275301562dcac28ac055a485cc6a83db1cc36cd33",
+    "spans/weijin__luji_wenfu__part01.tsv": "d04d4998f34a6285ff1f2e0b9b4997170ebc4302ed5098dd13eef40954727ad1",
+    "spans/weijin__luyun_pingyuan_03__part01.tsv": "fda61953d9e01538d47af211a91233472997a28d100659b8f135c1445db6c60a",
+    "spans/weijin__luyun_pingyuan_04__part01.tsv": "ff3b56eee002b21023f5139c951fab8d50f49f1df176fc6eefffcc8d3610e049",
+    "spans/weijin__luyun_pingyuan_05__part01.tsv": "2179b8264d5a589201655e04fa3b77e4364bb8eb750e2d97190b2dc486c23d56",
+    "spans/weijin__luyun_pingyuan_06__part01.tsv": "1708e6e8e3d1338f0979eaef43db1833cd62c9b76bd32f2eecaa5bbefcfd77b8",
+    "spans/weijin__luyun_pingyuan_07__part01.tsv": "6bf48a919143d9dde7713376d8b287f944f28c55044c526dbe540417a6cf8c17",
+    "spans/weijin__luyun_pingyuan_09__part01.tsv": "e7d8d213c6fab46fd7fcd1a259bf2f1b300205d708cee111fdd13a0e0edb048e",
+    "spans/weijin__luyun_pingyuan_10__part01.tsv": "2e72c41cfb8f26d9eb10650afc6e5131b75b7f81b02ad06c7f1a41f23ed4fcb4",
+    "spans/weijin__luyun_pingyuan_11__part01.tsv": "11b88ec3649ec70017e637e656604a2bc752ad0734a770c28325d07d541a5dc3",
+    "spans/weijin__luyun_pingyuan_12__part01.tsv": "fc154686b587d8dff6894b330b74f44cd76d7dc5a3b06c046b818dd9fa3d9615",
+    "spans/weijin__luyun_pingyuan_13__part01.tsv": "249d4f6ca4b3edbdebce7cb60be423b5964add8b7bf2da7e8c6db541045014af",
+    "spans/weijin__luyun_pingyuan_14__part01.tsv": "fc7db0837afaa2f927ebef2396b8ce085ee8a24d42ea123e005688ed2704901d",
+    "spans/weijin__luyun_pingyuan_15__part01.tsv": "ec58c067fc6bb571596973defd5ab5bcc8cc8ddd0eb644c37a653db730571dec",
+    "spans/weijin__luyun_pingyuan_16__part01.tsv": "34441d0fe0ea79638adba09468bc4d9eae171747e809a9be9ccb2c32baa9092d",
+    "spans/weijin__luyun_pingyuan_17__part01.tsv": "d0a8f4af78fc84c78033666ae32562481251d043ac99a31486f3e37f695b2750",
+    "spans/weijin__luyun_pingyuan_18__part01.tsv": "405747840727da2a5ef491da786f2787b271f27fd12f51c261883cc35bc072f0",
+    "spans/weijin__luyun_pingyuan_19__part01.tsv": "8338e6602877d2b65383134f5bb7ce5a1a27d994f2dac97a6f3904d185c8caab",
+    "spans/weijin__luyun_pingyuan_20__part01.tsv": "b3a185e001cb82b87e2f8e6909fc30c13ea633da7b3629234423ee148f453053",
+    "spans/weijin__luyun_pingyuan_21__part01.tsv": "d5b18cf2d0075de1ec8185678caf07073588b7fba57308f344bc3703d2e38833",
+    "spans/weijin__luyun_pingyuan_22__part01.tsv": "89f62ae2438da82e8949df4b45cc2fe68eeaefb16597c9b098b1e4cb387a96b8",
+    "spans/weijin__luyun_pingyuan_25__part01.tsv": "0525f01374cf23fd0cbc1cabda20e02cd2ad66acf975c81e56cb17e61a54308a",
+    "spans/weijin__luyun_pingyuan_26__part01.tsv": "e068ea329be3df02627618897c8a9d76ea21811ebb0437b25139a7ee73e49d3a",
+    "spans/weijin__luyun_pingyuan_27__part01.tsv": "36db3207b6c6360845ba9e94f1333946c97eca2c53beed3c0c4c515c4831e2a6",
+    "spans/weijin__luyun_pingyuan_29__part01.tsv": "dca8ee732fb477f9c80b93b4ecd0e10d4983d9becb23e7e3bdaa2245374ed973",
+    "spans/weijin__luyun_pingyuan_31__part01.tsv": "9f4d258b2020ef6336b16ae45f7efff3bd360caeaa48d895e56f28d44b47edb4",
+    "spans/weijin__luyun_pingyuan_32__part01.tsv": "73d50935f6b5f72b73314cceebcfc71db1f6b97cb464f99203aed0508fa82981",
+    "spans/weijin__luyun_pingyuan_34__part01.tsv": "7a5ac9b121713bf32a31f4089ef7136c53649fd0131cf5652b2f444be18067e6",
+    "spans/weijin__luyun_pingyuan_35__part01.tsv": "a5140a9bcbff274abf4457b3706cc31a9cc93891f35d3ee03225e02a5f18df39",
+    "spans/weijin__yangxiu_lin__part01.tsv": "dacf14317e3fa29444a253625b2730ca1d7dbad379407404efcf39a1ac0125e6",
+    "spans/weijin__zhiyu_liubie__part01.tsv": "257776868e906ad9fd83cf0e3e77d7d735e2f69beaeaae86b73a182cbbf79135",
+    "spans/weijin__zhiyu_liubie__part02.tsv": "3216a10d6f1de662efb85064609aa1b403601ecd54a29a3a0a34c553641c4576",
+    "spans/weijin__zhiyu_liubie__part03.tsv": "4e4b2cc9fc33f12e0f00ce7fe96606102230d3761a500c97f425afc264f7a34d",
+    "spans/weijin__zhiyu_liubie__part04.tsv": "bb250d4a58eae5d58e1d647aca7d29f4748a99a3ee9ad0563f92561d2a986aa8",
+    "spans/weijin__zhiyu_liubie__part05.tsv": "a47a3618d8a19932dc5589e13209fd7cbc2e96e51a4147f9eccb124d984049bf",
+    "spans/weijin__zhiyu_liubie__part06.tsv": "9038a28a7b22ce81ad87b221ec9e3b762d7321c0537d714104165d7040e98794",
+    "spans/weijin__zhiyu_liubie__part07.tsv": "e1b19796d8699e6f7a00f86bf11dc1085376f6a32bce5280107261da7b24576c",
+    "spans/weijin__zhiyu_liubie__part08.tsv": "96c3b0041cef8d32b0d17b92d0b6c5a454f32033ecd92d3197bde40b05ffe3c1",
+    "spans/weijin__zhiyu_liubie__part09.tsv": "db6ecf8977a457beab10ac5e353179e21cf1f380f3cea7ae1f284112112b2c44",
+    "spans/weijin__zhiyu_liubie__part10.tsv": "7f0080fecfd9ce71be6418f719913366c01d8e3de3db9ae0acf06e23989f9898",
+    "spans/weijin__zhiyu_liubie__part11.tsv": "a78c90ca407f0f5349fc7eaee1835e94be40135c30a385c49ceeb5a836ced44a",
+    "spans/weijin__zuosi_sandu__part01.tsv": "283be99e02ed14726275f49eae01592311dcc51e41d18fd5c3fad88860835dcb"
+  }
+}

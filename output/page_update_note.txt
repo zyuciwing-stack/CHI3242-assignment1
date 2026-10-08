@@ -1,0 +1,17 @@
+results.html 頁面更新紀錄（僅呈現與互動層；未重跑分析）
+generated_utc: 2026-10-07T15:22:34.380721+00:00
+generator: scripts/build_results_page.py sha256=4f5080bd665f2941149449aa5419cd390b65be83bbedd70fbc45b7de8e3be69a
+results_html_sha256: ebc9a304e87eec7cb4e1c86d4c38d45eba269f61b36d40f675e6e9305a9b5104
+input csv sha256 (read-only, unchanged by this generator):
+  collocate_examples.csv: 401b6ba7f47fa8e19bffdab4c07abbaf85df0aa1b24e826b81550d003269da62
+  collocates_sentence.csv: 0110da14242397afba1b0474084dc42666fab2a1a7926e5ec39da530687573e3
+  collocates_window10.csv: ef36030bfcdef10a37f6e3b175d5ca51e922ffbfeb7318ef2e3d4c06825a70e1
+  collocates_window5.csv: 018337dc6e0126f1218a10e82db372b90465b17d3e3ddbd47b3b85acd69f7759
+  qi_hits.csv: 072780811d2fa68e65af7d86a31c67468abeac029fdb4f76d420592da2d600ab
+  table_verification.csv: d5d0fda4fbc6da35ad2e4be5374576188e8a490e63050fc16f5796399493f010
+  unit_verification.csv: c699f4eceec8e21037631da25b6d092e6d32f25463909010eb6030c03ca14bdf
+驗證：
+  window5: 完整 332 列；obs_local>=2 共 18 列；每列均有代表例句。
+  window10: 完整 409 列；obs_local>=2 共 25 列；每列均有代表例句。
+  sentence: 完整 511 列；obs_local>=2 共 35 列；每列均有代表例句。
+analysis_log.json 未改寫；其歷史 output_sha256 中 results.html 對應本頁更新前版本，見本記錄。

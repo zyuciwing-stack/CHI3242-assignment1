@@ -1,0 +1,33 @@
+results.html 頁面更新紀錄（qi_scope_v4_dict：詞典補充分詞版六表；僅呈現與互動層）
+generated_utc: 2026-10-08T14:23:58.069014+00:00
+generator: scripts/build_results_page.py sha256=e6716be309955d2caa6f06adb16570902ec4d2694a1094796b29e43cb604c389
+results_html_sha256: 36530c72708d68ed5be5ac97fe7a14fa1c0c91fece47904181573cf2d0331b1a
+本輪輸入（唯讀）：data/texts、input/、input_lock.json、resources/（詞典原檔與派生表）
+本輪輸出：collocates_*.csv、collocates_minlen1_*.csv、collocate_examples*.csv、table_verification*.csv、tokenization_changes.csv、qi_context_tokenization_comparison.csv、tokenization_summary.csv、analysis_log.json、analysis_log_minlen1.json
+input csv sha256 (read-only, unchanged by this generator):
+  collocate_examples.csv: e8ecfe196993afd946949d50ef9fba90f4c15d541ecf0f14e002128b63e879fd
+  collocate_examples_minlen1.csv: a708a58a238ba2760225b8f4c03252e9b6d65579dd6bba746829fb0340bb2380
+  collocates_minlen1_sentence.csv: 275bd2a583fa9b52777ff95c9114dcaae0e2fc9720289b7cc363cc352ffdeaed
+  collocates_minlen1_window10.csv: ae2d0e23968909ffcfc1041283a493a29a709491c0bfdd653cab704455e23169
+  collocates_minlen1_window5.csv: a4c47cc8d14769a49f6f84b02dac6f2870c43a7b5104d0fa1f95d8546b639fdc
+  collocates_sentence.csv: daacefe1a5e384627a794a35dc4185ad6b4e0ab1f5f0fdc3d50c378f857df238
+  collocates_window10.csv: fafbb780330ee6fa6dca0ce51e0982e5fcc1dbc662a2cb558465c0aafb5f7be3
+  collocates_window5.csv: f71755a34b9aecc0e0e58f528b5edd17f7d429ef20638399bdb36509712e3965
+  qi_context_tokenization_comparison.csv: 1cd1bfb0d1d009f72beacd78473e67d104dc6cbec56b79ac0fdb0f5d50c3518f
+  qi_hits.csv: 072780811d2fa68e65af7d86a31c67468abeac029fdb4f76d420592da2d600ab
+  table_verification.csv: c2f9c3686791bf9bb767af23335effb2db7ecaae970ce92dbcf2d2407e8dc433
+  table_verification_minlen1.csv: 719c067ced01d753f868b181d9820dd4a4ba8865a95625f962b7a57fd08f0d5b
+  tokenization_changes.csv: 61ec990f3924bda328284574000ca2c8d2339a5976a1044ee21fb1ff8ea3150e
+  tokenization_summary.csv: 27024820d90cf0f97fac415c05b9bee5dc8285f3733759052979a8cc3550c97a
+  unit_verification.csv: 8ea8c186ea5bd2e402d5b773820735b177918e24629700f3d3cf9de655678406
+驗證：
+  minlen2/window5: 完整 340 列；obs>=2 共 17 列；單字 0 列；每列均有代表例句。
+  minlen2/window10: 完整 406 列；obs>=2 共 24 列；單字 0 列；每列均有代表例句。
+  minlen2/sentence: 完整 509 列；obs>=2 共 35 列；單字 0 列；每列均有代表例句。
+  minlen1/window5: 完整 381 列；obs>=2 共 27 列；單字 41 列；每列均有代表例句。
+  minlen1/window10: 完整 447 列；obs>=2 共 42 列；單字 41 列；每列均有代表例句。
+  minlen1/sentence: 完整 569 列；obs>=2 共 66 列；單字 60 列；每列均有代表例句。
+  len>=2 cross-check window5: {'len_ge2_rows': 340, 'identical_to_formal': True, 'formal_rows': 340}
+  len>=2 cross-check window10: {'len_ge2_rows': 406, 'identical_to_formal': True, 'formal_rows': 406}
+  len>=2 cross-check sentence: {'len_ge2_rows': 509, 'identical_to_formal': True, 'formal_rows': 509}
+qi_scope_v3（原通用 jieba 基線）與提交倉庫未動；本頁不依賴外部伺服器或 CDN。

@@ -1,0 +1,15 @@
+record_id	unit_id	segment_in_unit	token_index_in_segment	token	simp_start_in_unit	simp_end_in_unit	is_target_token
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	0	容象	0	2	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	1	图	2	3	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	2	而	3	4	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	3	赞立	4	6	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	4	宜使	7	9	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	5	辞	9	10	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	6	简而义	10	13	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	7	正	13	14	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	8	孔融	15	17	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	9	之赞	17	19	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	10	杨公	19	21	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	11	亦	22	23	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	12	其义	23	25	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part03	0	13	也	25	26	False

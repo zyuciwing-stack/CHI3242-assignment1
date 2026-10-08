@@ -1,0 +1,31 @@
+results.html 頁面更新紀錄（本輪：單字補充分析改為不使用停用詞篩選；僅呈現與互動層）
+generated_utc: 2026-10-08T09:18:51.307810+00:00
+generator: scripts/build_results_page.py sha256=0e15e7d346d2714758b964132c310cdffd9f986f135d3e1dd8678d55ab363aad
+results_html_sha256: 3705fc8cb90040c1f6223547aff09fd74ac7b090ab8c0ecc9a033e5178930532
+本輪新增分析輸入（唯讀）：
+  data/processed 正式分詞（unchanged, see analysis_log_minlen1.json digests）
+本輪更新輸出：collocates_minlen1_*.csv、collocate_examples_minlen1.csv、table_verification_minlen1.csv、analysis_log_minlen1.json（stopwords=[]，min_word_length=1）
+input csv sha256 (read-only, unchanged by this generator):
+  collocate_examples.csv: 401b6ba7f47fa8e19bffdab4c07abbaf85df0aa1b24e826b81550d003269da62
+  collocate_examples_minlen1.csv: f7326eb0d2ad5b907f3f9a2e091681157ab671a455df2d2f9ccba274191d007b
+  collocates_minlen1_sentence.csv: cc801a81273c214498315baf424187cd8a79035c409b1fac764c3458e260452c
+  collocates_minlen1_window10.csv: 8e5bb848e7f58a0182912d6485b441a2a94275df1556f988191c8719ec6153c7
+  collocates_minlen1_window5.csv: c1d8be2c6fae79093ccf6fbc19d77029bc10def4f64fd1ba6fbebb7326e6fc8a
+  collocates_sentence.csv: 0110da14242397afba1b0474084dc42666fab2a1a7926e5ec39da530687573e3
+  collocates_window10.csv: ef36030bfcdef10a37f6e3b175d5ca51e922ffbfeb7318ef2e3d4c06825a70e1
+  collocates_window5.csv: 018337dc6e0126f1218a10e82db372b90465b17d3e3ddbd47b3b85acd69f7759
+  qi_hits.csv: 072780811d2fa68e65af7d86a31c67468abeac029fdb4f76d420592da2d600ab
+  table_verification.csv: d5d0fda4fbc6da35ad2e4be5374576188e8a490e63050fc16f5796399493f010
+  table_verification_minlen1.csv: bfb5575eb4858a22a74f5116a674a384bfc2698f1a3d27c3b6b95404169ba078
+  unit_verification.csv: c699f4eceec8e21037631da25b6d092e6d32f25463909010eb6030c03ca14bdf
+驗證：
+  minlen2/window5: 完整 332 列；obs>=2 共 18 列；單字 0 列；每列均有代表例句。
+  minlen2/window10: 完整 409 列；obs>=2 共 25 列；單字 0 列；每列均有代表例句。
+  minlen2/sentence: 完整 511 列；obs>=2 共 35 列；單字 0 列；每列均有代表例句。
+  minlen1/window5: 完整 381 列；obs>=2 共 32 列；單字 49 列；每列均有代表例句。
+  minlen1/window10: 完整 457 列；obs>=2 共 44 列；單字 48 列；每列均有代表例句。
+  minlen1/sentence: 完整 578 列；obs>=2 共 65 列；單字 67 列；每列均有代表例句。
+  len>=2 cross-check window5: {'len_ge2_rows': 332, 'identical_to_formal': True, 'formal_rows': 332}
+  len>=2 cross-check window10: {'len_ge2_rows': 409, 'identical_to_formal': True, 'formal_rows': 409}
+  len>=2 cross-check sentence: {'len_ge2_rows': 511, 'identical_to_formal': True, 'formal_rows': 511}
+analysis_log.json 與 analysis_log_minlen1.json 均未改寫其歷史雜湊欄位。

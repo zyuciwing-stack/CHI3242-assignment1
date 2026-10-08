@@ -1,0 +1,48 @@
+{
+  "status": "complete",
+  "prepared_utc": "2026-10-08T14:14:48.397794+00:00",
+  "original_dictionary": {
+    "path": "resources/dictionaries/古代汉语词典_original.txt",
+    "sha256": "d8922e2aeb42f7dd8317da60aea07be8b99ac8bb2e740956329df0d0c27154c7",
+    "size_bytes": 1625712,
+    "lines": 200826,
+    "unique_entries": 200826,
+    "encoding": "utf-8 (no BOM)",
+    "line_ending": "LF",
+    "trailing_newline": true,
+    "empty_lines": 0,
+    "has_frequency": false,
+    "has_pos": false,
+    "has_gloss": false,
+    "punctuation_containing_entries": 505,
+    "source_note": "教師提供的詞目表；未有書目／製作資料，不推定出版詞典版本、時代覆蓋或準確率；內容含近現代詞目",
+    "expected_spec_sha256": "d8922e2aeb42f7dd8317da60aea07be8b99ac8bb2e740956329df0d0c27154c7",
+    "expected_spec_size": 1625712
+  },
+  "derived_dictionary": {
+    "path": "resources/dictionaries/ancient_words_t2s.txt",
+    "sha256": "d5f6e7694e3c71786232cbdad09b535ed5af730bd793a447e9476c42baa6eeff",
+    "entries": 200756,
+    "conversion_changed_forms": 966,
+    "post_conversion_duplicates_removed": 70,
+    "policy": "OpenCC t2s per line, locked order; duplicates keep first occurrence; no entry added/removed/split/joined; internal punctuation kept",
+    "encoding": "utf-8 (no BOM)",
+    "line_ending": "LF",
+    "trailing_newline": true,
+    "expected_spec_sha256": "d5f6e7694e3c71786232cbdad09b535ed5af730bd793a447e9476c42baa6eeff",
+    "conversion_log": "resources/dictionaries/ancient_words_t2s_conversion_log.csv"
+  },
+  "jieba": {
+    "version": "0.42.1",
+    "main_dict_path": "dict.txt",
+    "main_dict_sha256": "7197c3211ddd98962b036cdf40324d1ea2bfaa12bd028e68faa70111a88e12a8",
+    "policy": "independent jieba.Tokenizer(); initialize() then load_userdict(derived) BEFORE any segmentation; default main dictionary retained (no set_dictionary); default mode, HMM=True",
+    "frequency_policy": "no frequencies supplied; jieba native no-frequency auto-estimation (segmentation weights only, not corpus frequencies); locked import order"
+  },
+  "opencc": {
+    "version": "0.1.7",
+    "mode": "t2s"
+  },
+  "preparer_sha256": "9ac3c6ae5ad6b628859e8e88a8f57395ea10370f470857b5529e581f7dabb8df",
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]"
+}

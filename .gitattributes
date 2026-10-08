@@ -1,0 +1,3 @@
+# 防止 Windows 行尾轉換（CRLF/LF）破壞 input_lock.json 等鎖定檔的 SHA-256
+# 本倉庫所有檔案一律視為二進位，不進行任何行尾／編碼轉換。
+* -text

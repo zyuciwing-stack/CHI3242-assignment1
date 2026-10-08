@@ -1,0 +1,17 @@
+record_id	unit_id	segment_in_unit	token_index_in_segment	token	simp_start_in_unit	simp_end_in_unit	is_target_token
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	0	研	0	1	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	1		1	2	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	2	名理	2	4	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	3	而论	5	7	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	4	难生	7	9	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	5	焉	9	10	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	6	论贵于	11	14	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	7	允理	14	16	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	8	不	17	18	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	9	求	18	19	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	10	支离	19	21	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	11	若	22	23	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	12	嵇康	23	25	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	13	之论	25	27	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	14	成文	28	30	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part06	0	15	美矣	30	32	False

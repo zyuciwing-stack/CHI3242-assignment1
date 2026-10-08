@@ -1,0 +1,8 @@
+record_id	unit_id	segment_in_unit	token_index_in_segment	token	simp_start_in_unit	simp_end_in_unit	is_target_token
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	0	今所	0	2	False
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	1	□	2	3	False
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	2	哀策	3	5	False
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	3	者	5	6	False
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	4	古	7	8	False
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	5	诔	8	9	False
+weijin__zhiyu_liubie	weijin__zhiyu_liubie__part08	0	6	之义	9	11	False

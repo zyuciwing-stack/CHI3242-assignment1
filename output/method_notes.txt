@@ -1,0 +1,55 @@
+氣字搭配詞本地運行方法紀錄
+
+以〈典論·論文〉為立題入口、以《詩品》為上限參照；兩篇年代待核材料按使用者決定保留，非全部嚴格證定在《詩品》成書以前。
+
+本次為探索性分析，Fisher 單尾 greater，p≤0.05，correction=None，未作多重檢定校正；顯著列不是詞義分類或文學結論，低頻及重引材料須回看例句與語料構成。所有所選單元（含零命中）合併作背景，沒有前後期分組；文論重引保留並分別計數，不能宣稱觀察值統計獨立。
+
+範圍注意：
+- 〈南齊書·文學傳論及贊〉相對《詩品》的成篇年代仍待核。
+- 〈內典碑銘集林序〉相對《詩品》的成篇年代仍待核。
+- 〈隱秀〉電子編注與爭議補文層次仍待核；本輪沿用現有文字，不能把全章無條件稱為劉勰原文。
+
+核驗輸入：111 records，128 units；全部單元參與處理，保留氣字target=106（從實際字符與tokens計算）。
+OpenCC t2s後先核字符長度及quote座標；句界為。！？；…（連續省略號及閉引號同句）及換行；固定excluded=1區間作硬邊界，不拼接兩側。
+保留段在每個气位置定向拆分並重插單字，再以jieba default、HMM=True分詞；只去純標點／空白／控制格式token，不刪短句。空段留在單元核驗，qhchina輸入為所有非空保留段。
+qhchina max_sentence_length=256明示傳入；任一保留段超限即停止，避免靜默截斷。
+window5/window10：obs_local是被至少一個氣窗口覆蓋的非目標詞位置數，重疊窗口只計一次；N為全部token數−氣target數，R1為窗口覆蓋非目標位置數。
+sentence：每個非空保留句段每詞只計一次；N為非空句段數，R1為含氣句段數。引詩切斷後的句段不等同未切斷原句。
+三表各自核驗obs_local、obs_global、exp=R1×C1/N、ratio=obs/exp及scipy Fisher p；列聯表[[a,R1-a],[C1-a,N-R1-C1+a]]，並核驗顯著結果清單完整性。
+filters只用於結果：min_word_length=2、max_p=0.05及固定40條stopwords，沒有先刪背景token。sort_by=obs_local，ascending=False。
+停用詞來源：qhchina.load_stopwords('zh_cl_sim') + OpenCC t2s; matched frozen input
+重用v21只在全部segment_index、spans、tokens、source及fixed-quote切分逐單元一致時接受；未通過／缺失單元重新分詞，缺必需TSV header則明報停止。
+真實例句來自實際計數事件，保留原文及字符位置；原句含排除引詩的情況已標記，排除片段沒有參與窗口或同段計算。
+
+{
+  "window5": {
+    "N_all_tokens_or_segments": 35138,
+    "N_fisher": 35032,
+    "R1": 729,
+    "target_tokens": 106,
+    "rows": 332,
+    "candidate_types_tested": 427,
+    "independent_obs_exp_ratio_fisher_check": "passed",
+    "correction": null
+  },
+  "window10": {
+    "N_all_tokens_or_segments": 35138,
+    "N_fisher": 35032,
+    "R1": 1036,
+    "target_tokens": 106,
+    "rows": 409,
+    "candidate_types_tested": 610,
+    "independent_obs_exp_ratio_fisher_check": "passed",
+    "correction": null
+  },
+  "sentence": {
+    "N_all_tokens_or_segments": 3966,
+    "N_fisher": 3966,
+    "R1": 102,
+    "target_tokens": 106,
+    "rows": 511,
+    "candidate_types_tested": 742,
+    "independent_obs_exp_ratio_fisher_check": "passed",
+    "correction": null
+  }
+}

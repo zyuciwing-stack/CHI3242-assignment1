@@ -1,0 +1,11 @@
+record_id	unit_id	segment_in_unit	token_index_in_segment	token	simp_start_in_unit	simp_end_in_unit	is_target_token
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	0	潘安	0	2	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	1	仁之为	2	5	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	2	文	5	6	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	3	也	6	7	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	4	犹翔禽	8	11	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	5	之	11	12	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	6	羽毛	12	14	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	7	衣被	15	17	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	8	之	17	18	False
+weijin__lichong_hanlin	weijin__lichong_hanlin__part02	0	9	绡縠	18	20	False

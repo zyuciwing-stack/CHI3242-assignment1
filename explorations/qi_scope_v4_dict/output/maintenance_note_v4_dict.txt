@@ -1,0 +1,35 @@
+qi_scope_v4_dict 維護修正紀錄（2026-10-08；只修文件性問題，不重跑分詞／qhchina）
+
+## 修正範圍
+1. output/qi_context_tokenization_comparison.csv 的 orig_char 欄：原以簡體 token「气」填入，修正為依 (record_id, unit_id, simp_offset_in_unit) 回查原正文所得字形「氣」；106 行全數改為「氣」，與 output/qi_hits.csv 逐行一致。行序、其餘欄位與 tokens 全部不變（由 scripts/maintain_fix_qi_comparison.py 逐欄核對後寫入）。
+2. scripts/run_scope_qhchina.py：同步修正該比較欄位的產生邏輯（orig_char 改讀 texts[rid][base+ts] 原文字元，不再用簡體 token）；未改任何分析參數、分詞、濾器或統計。
+3. reports/研究流程與AI使用說明.md、reports/單字補充分析說明.md：改為本包（詞典補充分詞版）的實算數字與有效命令（35,411 token／3,966 非空句段／106 目標；正式 340/406/509、補充 381/447/569、單字 41/41/60；window N=35,305、R1=734/1,047；sentence N=3,966、R1=102）。移除 v3 歷史數字與 --existing-project-root；CLI 以本輪 runner 的 --verify-inputs／--baseline-root 為準。AI 執行模型按本輪實際記錄（OpenCode 本地 deepseek/deepseek-v4-pro 執行；ChatGPT/Codex 僅 v3 管線準備與本輪重分詞預檢）。
+4. reports/詞典補充分詞與重跑說明.md：肇自血／之匹／云时 更正為 v3 正式表已存在的既有疑切（未修），干时／有齐 另記為本輪新變化；「文以氣為主」只陳述氣目標落點正確，不稱整句詞界已正確；補記分詞比較表 3,989 行（含 23 個空 token 段）與 45／43 兩口徑差額（〈養氣〉兩個各含兩次气的變更句段）。
+5. 刪除 scripts/__pycache__/（2 個 .pyc，屬快取，不屬研究歷史）；工作區研究歷史未刪。
+
+## 未改動（SHA 與歷史日誌保持原樣）
+- 六張搭配 CSV、兩份例句 CSV、qi_hits.csv、table_verification*.csv、unit_verification.csv、method_notes.txt、results.html、tokenization_changes.csv、tokenization_summary.csv。
+- data/processed/ 512 檔、input_lock.json、input/ 三檔、resources/（原詞目表、派生表、轉換紀錄、preprocessing_lock.json）。
+- output/analysis_log.json 與 output/analysis_log_minlen1.json 未改寫；其中記錄的 runner_sha256（ffdd495f…）指修正前腳本，本紀錄不倒填歷史執行 SHA。
+
+## SHA 對照（原 → 新）
+- output/qi_context_tokenization_comparison.csv：
+  原 1cd1bfb0d1d009f72beacd78473e67d104dc6cbec56b79ac0fdb0f5d50c3518f
+  新 bcf9cab8276bcf1124992a6c84452855214de18cc6b57847079c2f1ab970a57a
+- scripts/run_scope_qhchina.py：
+  原 ffdd495fe80a5b6f88720ce5d5deb772ca20fb0281c4570d471bb76ad255da73
+  新 f3254f1b4eaf2e81ef74911ac73b1615d0bd2c2c3fc02e85afdbb8aa44e72fb3
+- reports/研究流程與AI使用說明.md：原 cfc9c16e… → 新 8c8889b0…
+- reports/單字補充分析說明.md：原 8891e836… → 新 93ef94d0…
+- reports/詞典補充分詞與重跑說明.md：原 98172ca8… → 新 977087da…
+- scripts/__pycache__/：prepare_dictionary.cpython-312.pyc（c2ab7954…）、run_scope_qhchina.cpython-312.pyc（d6146162…）已刪除。
+- 新增 scripts/maintain_fix_qi_comparison.py：5c4af171e349ee41c68fb9939140d3372966ec28ef71372a3e3be3b6981a4c0a
+
+## 備份位置
+C:\CHI3242文本發掘\研究過程歸檔\氣研究_整理_20261008_230215_v4維護備份\（含修正前檔案與 SHA 清單）。
+
+## 核驗
+- 106 行 orig_char 全為「氣」且與 qi_hits.csv 逐行一致；其餘欄位與行序不變（程式內核對通過）。
+- python -m py_compile 全部 scripts 通過；--verify-inputs 通過。
+- 六表、例句、qi_hits、512 個處理檔、input_lock、詞典檔、兩份日誌、results.html SHA 全部不變（與 analysis_log.json 的 output_sha256／processed_sha256 及 page_update_note_v4_dict.txt 對照）。
+- 未 commit、未 push；未同步提交倉庫；未代寫文學結論或報告正文。

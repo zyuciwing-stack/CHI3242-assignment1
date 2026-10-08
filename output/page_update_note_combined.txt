@@ -1,0 +1,55 @@
+results.html 頁面更新紀錄（合併版：v3 正式六表＋v4 詞典探索六表；僅呈現與互動層）
+generated_utc: 2026-10-08T18:59:04.183121+00:00
+generator: scripts/build_results_page.py sha256=513325e31a19927a41e98c15bcac9ec32f42214312010c5ff76a7e2b528a9eb7
+results_html_sha256: dc9bc977f06a4926b7a1b5f2d0809e179e6e4c9023d72dabb8a63640962d4849
+本頁輸入（唯讀，未改動）：根 output/*.csv（v3）與 explorations/qi_scope_v4_dict/output/*.csv（v4）
+例句按「版本＋分析設定＋搭配詞」對應，兩版不混合；頁面離線可開，不依賴 fetch／伺服器／CDN。
+v3 頁面（SHA 3705fc8c…，本輪前版本）與 v3 頁面產生器已備份至研究過程歸檔（見備份紀錄）。
+input csv sha256 (read-only):
+  output/collocate_examples.csv: 401b6ba7f47fa8e19bffdab4c07abbaf85df0aa1b24e826b81550d003269da62
+  output/collocate_examples_minlen1.csv: f7326eb0d2ad5b907f3f9a2e091681157ab671a455df2d2f9ccba274191d007b
+  output/collocates_minlen1_sentence.csv: cc801a81273c214498315baf424187cd8a79035c409b1fac764c3458e260452c
+  output/collocates_minlen1_window10.csv: 8e5bb848e7f58a0182912d6485b441a2a94275df1556f988191c8719ec6153c7
+  output/collocates_minlen1_window5.csv: c1d8be2c6fae79093ccf6fbc19d77029bc10def4f64fd1ba6fbebb7326e6fc8a
+  output/collocates_sentence.csv: 0110da14242397afba1b0474084dc42666fab2a1a7926e5ec39da530687573e3
+  output/collocates_window10.csv: ef36030bfcdef10a37f6e3b175d5ca51e922ffbfeb7318ef2e3d4c06825a70e1
+  output/collocates_window5.csv: 018337dc6e0126f1218a10e82db372b90465b17d3e3ddbd47b3b85acd69f7759
+  output/qi_hits.csv: 072780811d2fa68e65af7d86a31c67468abeac029fdb4f76d420592da2d600ab
+  output/table_verification.csv: d5d0fda4fbc6da35ad2e4be5374576188e8a490e63050fc16f5796399493f010
+  output/table_verification_minlen1.csv: bfb5575eb4858a22a74f5116a674a384bfc2698f1a3d27c3b6b95404169ba078
+  output/unit_verification.csv: c699f4eceec8e21037631da25b6d092e6d32f25463909010eb6030c03ca14bdf
+  explorations/qi_scope_v4_dict/output/collocate_examples.csv: e8ecfe196993afd946949d50ef9fba90f4c15d541ecf0f14e002128b63e879fd
+  explorations/qi_scope_v4_dict/output/collocate_examples_minlen1.csv: a708a58a238ba2760225b8f4c03252e9b6d65579dd6bba746829fb0340bb2380
+  explorations/qi_scope_v4_dict/output/collocates_minlen1_sentence.csv: 275bd2a583fa9b52777ff95c9114dcaae0e2fc9720289b7cc363cc352ffdeaed
+  explorations/qi_scope_v4_dict/output/collocates_minlen1_window10.csv: ae2d0e23968909ffcfc1041283a493a29a709491c0bfdd653cab704455e23169
+  explorations/qi_scope_v4_dict/output/collocates_minlen1_window5.csv: a4c47cc8d14769a49f6f84b02dac6f2870c43a7b5104d0fa1f95d8546b639fdc
+  explorations/qi_scope_v4_dict/output/collocates_sentence.csv: daacefe1a5e384627a794a35dc4185ad6b4e0ab1f5f0fdc3d50c378f857df238
+  explorations/qi_scope_v4_dict/output/collocates_window10.csv: fafbb780330ee6fa6dca0ce51e0982e5fcc1dbc662a2cb558465c0aafb5f7be3
+  explorations/qi_scope_v4_dict/output/collocates_window5.csv: f71755a34b9aecc0e0e58f528b5edd17f7d429ef20638399bdb36509712e3965
+  explorations/qi_scope_v4_dict/output/qi_context_tokenization_comparison.csv: bcf9cab8276bcf1124992a6c84452855214de18cc6b57847079c2f1ab970a57a
+  explorations/qi_scope_v4_dict/output/qi_hits.csv: 072780811d2fa68e65af7d86a31c67468abeac029fdb4f76d420592da2d600ab
+  explorations/qi_scope_v4_dict/output/table_verification.csv: c2f9c3686791bf9bb767af23335effb2db7ecaae970ce92dbcf2d2407e8dc433
+  explorations/qi_scope_v4_dict/output/table_verification_minlen1.csv: 719c067ced01d753f868b181d9820dd4a4ba8865a95625f962b7a57fd08f0d5b
+  explorations/qi_scope_v4_dict/output/tokenization_changes.csv: 61ec990f3924bda328284574000ca2c8d2339a5976a1044ee21fb1ff8ea3150e
+  explorations/qi_scope_v4_dict/output/tokenization_summary.csv: 27024820d90cf0f97fac415c05b9bee5dc8285f3733759052979a8cc3550c97a
+  explorations/qi_scope_v4_dict/output/unit_verification.csv: 8ea8c186ea5bd2e402d5b773820735b177918e24629700f3d3cf9de655678406
+驗證：
+  v3/minlen2/window5: 完整 332 列；obs>=2 共 18 列；單字 0 列；每列均有代表例句。
+  v3/minlen2/window10: 完整 409 列；obs>=2 共 25 列；單字 0 列；每列均有代表例句。
+  v3/minlen2/sentence: 完整 511 列；obs>=2 共 35 列；單字 0 列；每列均有代表例句。
+  v3/minlen1/window5: 完整 381 列；obs>=2 共 32 列；單字 49 列；每列均有代表例句。
+  v3/minlen1/window10: 完整 457 列；obs>=2 共 44 列；單字 48 列；每列均有代表例句。
+  v3/minlen1/sentence: 完整 578 列；obs>=2 共 65 列；單字 67 列；每列均有代表例句。
+  v3 len>=2 cross-check window5: {'len_ge2_rows': 332, 'identical_to_formal': True, 'formal_rows': 332}
+  v3 len>=2 cross-check window10: {'len_ge2_rows': 409, 'identical_to_formal': True, 'formal_rows': 409}
+  v3 len>=2 cross-check sentence: {'len_ge2_rows': 511, 'identical_to_formal': True, 'formal_rows': 511}
+  v4/minlen2/window5: 完整 340 列；obs>=2 共 17 列；單字 0 列；每列均有代表例句。
+  v4/minlen2/window10: 完整 406 列；obs>=2 共 24 列；單字 0 列；每列均有代表例句。
+  v4/minlen2/sentence: 完整 509 列；obs>=2 共 35 列；單字 0 列；每列均有代表例句。
+  v4/minlen1/window5: 完整 381 列；obs>=2 共 27 列；單字 41 列；每列均有代表例句。
+  v4/minlen1/window10: 完整 447 列；obs>=2 共 42 列；單字 41 列；每列均有代表例句。
+  v4/minlen1/sentence: 完整 569 列；obs>=2 共 66 列；單字 60 列；每列均有代表例句。
+  v4 len>=2 cross-check window5: {'len_ge2_rows': 340, 'identical_to_formal': True, 'formal_rows': 340}
+  v4 len>=2 cross-check window10: {'len_ge2_rows': 406, 'identical_to_formal': True, 'formal_rows': 406}
+  v4 len>=2 cross-check sentence: {'len_ge2_rows': 509, 'identical_to_formal': True, 'formal_rows': 509}
+output/analysis_log.json、analysis_log_minlen1.json 及 v4 兩份日誌均未改寫其歷史雜湊欄位。

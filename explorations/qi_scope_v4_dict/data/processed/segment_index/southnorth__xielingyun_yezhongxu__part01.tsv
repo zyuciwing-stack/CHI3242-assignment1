@@ -1,0 +1,12 @@
+segment_in_unit	sentence_index	start_in_unit	end_in_unit	sentence_contains_excluded_quote
+0	0	0	21	0
+1	1	21	38	0
+2	2	38	54	0
+3	3	54	67	0
+4	4	67	79	0
+5	5	79	93	0
+6	6	93	104	0
+7	7	104	133	0
+8	8	133	146	0
+9	9	146	166	0
+10	10	166	170	0

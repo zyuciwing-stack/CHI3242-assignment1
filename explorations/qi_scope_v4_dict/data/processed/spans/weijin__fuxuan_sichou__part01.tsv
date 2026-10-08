@@ -1,0 +1,15 @@
+record_id	unit_id	segment_in_unit	token_index_in_segment	token	simp_start_in_unit	simp_end_in_unit	is_target_token
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	0	张	0	1	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	1	平子	1	3	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	2	作	3	4	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	3	四愁诗	5	8	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	4	体小而俗	10	14	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	5	七言	16	18	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	6	类	19	20	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	0	7	也	20	21	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	1	0	聊拟	22	24	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	1	1	而作	24	26	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	1	2	之	26	27	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	1	3	名曰	28	30	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	1	4	拟	31	32	False
+weijin__fuxuan_sichou	weijin__fuxuan_sichou__part01	1	5	四愁诗	32	35	False
